@@ -1,0 +1,253 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html,
+body{
+    width:100%;
+    height:100%;
+    overflow:hidden;
+    font-family:Arial, Helvetica, sans-serif;
+    background:#ffffff;
+}
+
+#loading{
+    position:fixed;
+    inset:0;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:#ffffff;
+    z-index:9999;
+    font-size:18px;
+}
+
+#book-wrapper{
+    position:fixed;
+    inset:0;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+#book{
+    width:100%;
+    height:100%;
+}
+
+#counter{
+    position:fixed;
+    bottom:76px;
+    left:50%;
+    transform:translateX(-50%);
+    background:transparent;
+    color:#555;
+    padding:0;
+    border-radius:0;
+    font-size:13px;
+    font-weight:600;
+    letter-spacing:.4px;
+    z-index:1000;
+}
+
+.ctrl-btn{
+    width:52px;
+    height:52px;
+    border:none;
+    border-radius:50%;
+    background:rgba(0,0,0,.35);
+    color:#fff;
+    cursor:pointer;
+    font-size:20px;
+    box-shadow:0 6px 18px rgba(0,0,0,.18);
+}
+
+.ctrl-btn:hover{
+    background:rgba(0,0,0,.55);
+}
+
+#nextBtn{
+    background:rgba(0,0,0,.75);
+}
+
+#whatsapp{
+    position:fixed;
+    right:0px;
+    bottom:32px;
+    z-index:1000;
+}
+
+#btnWhatsapp{
+    border:none;
+    background:#b1833d;
+    color:#fff;
+    padding:14px 30px;
+    border-radius:28px;
+    cursor:pointer;
+    font-size:14px;
+    font-weight:700;
+    box-shadow:0 8px 22px rgba(0,0,0,.18);
+}
+
+#btnWhatsapp:hover{
+    background:#9d7131;
+}
+
+.zoom-btn{
+    font-size:16px;
+    font-weight:700;
+}
+
+#zoomResetBtn{
+    display:none;
+}
+
+#book{
+    width:auto !important;
+    height:auto !important;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    transform-origin:center center;
+    will-change:transform;
+}
+
+.book-spread{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:0;
+}
+
+.book-page{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:#ffffff;
+    overflow:hidden;
+    flex:0 0 auto;
+}
+
+.book-page-img{
+    display:block;
+    width:auto;
+    height:auto;
+    max-width:none;
+    max-height:none;
+    user-select:none;
+    -webkit-user-drag:none;
+    image-rendering:auto;
+}
+
+.zoom-btn{
+    font-size:16px;
+    font-weight:700;
+}
+
+.book-spread{
+    position:relative;
+}
+
+/* sombra central da revista */
+.book-spread{
+    position:relative;
+}
+
+/* sombra suave no miolo da revista */
+.book-spread.double-page::before{
+    content:"";
+    position:absolute;
+    top:0;
+    bottom:0;
+    left:50%;
+    width:15px;
+    transform:translateX(-50%);
+    pointer-events:none;
+    z-index:10;
+
+    background:linear-gradient(
+        to right,
+        rgba(0,0,0,0) 0%,
+        rgba(0,0,0,0.06) 25%,
+        rgba(0,0,0,0.18) 48%,
+        rgba(0,0,0,0.22) 50%,
+        rgba(0,0,0,0.18) 52%,
+        rgba(0,0,0,0.06) 75%,
+        rgba(0,0,0,0) 100%
+    );
+
+    filter:blur(8px);
+    opacity:0.40;
+}
+
+/* brilho/sulco suave bem no centro */
+.book-spread.double-page::after{
+    content:"";
+    position:absolute;
+    top:0;
+    bottom:0;
+    left:50%;
+    width:26px;
+    transform:translateX(-50%);
+    pointer-events:none;
+    z-index:11;
+
+    background:linear-gradient(
+        to right,
+        rgba(255,255,255,0) 0%,
+        rgba(255,255,255,0.22) 38%,
+        rgba(0,0,0,0.16) 50%,
+        rgba(255,255,255,0.18) 62%,
+        rgba(255,255,255,0) 100%
+    );
+
+    filter:blur(4px);
+    opacity:0.65;
+}
+
+/* escurecimento interno de cada página perto do miolo */
+.book-spread.double-page .book-page:first-child{
+    box-shadow:inset -28px 0 35px -28px rgba(0,0,0,0.45);
+}
+
+.book-spread.double-page .book-page:last-child{
+    box-shadow:inset 28px 0 35px -28px rgba(0,0,0,0.45);
+}
+.nav-btn{
+    background:transparent !important;
+    box-shadow:none !important;
+    border:none !important;
+    border-radius:0 !important;
+    width:48px;
+    height:48px;
+    padding:0;
+}
+
+.nav-btn svg{
+    width:38px;
+    height:38px;
+    stroke:#111;
+    stroke-width:1.8;
+    fill:none;
+    stroke-linecap:round;
+    stroke-linejoin:round;
+}
+
+.nav-btn:hover{
+    background:transparent !important;
+    transform:scale(1.08);
+}
+
+#nextBtn.nav-btn{
+    background:transparent !important;
+}
+
+@media (min-width:901px){
+
+    #counter{
+        left:calc(50% + 65px) !important;
+    }
+
+}
