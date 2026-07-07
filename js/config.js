@@ -46,7 +46,7 @@ const CONFIG = {
 
         {
             title: "Letras de Metal",
-            page: 2
+            page: 3
         },
 
         {
