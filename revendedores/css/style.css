@@ -162,7 +162,18 @@ h3 {
   transform: translateY(-2px);
 }
 
+.icon-whatsapp {
+  width: 19px;
+  height: 19px;
+
+  flex: 0 0 auto;
+
+  fill: currentColor;
+}
+
 .btn-primary {
+  gap: 10px;
+
   color: #1d1d1d;
   background: var(--color-primary);
 
@@ -212,23 +223,15 @@ h3 {
   gap: 30px;
 }
 
-.brand-placeholder {
-  color: var(--color-dark);
-
-  font-size: 0.78rem;
-  line-height: 1;
-
-  letter-spacing: 0.08em;
+.brand {
+  display: flex;
+  align-items: center;
 }
 
-.brand-placeholder strong {
+.brand-logo {
   display: block;
-
-  margin-top: 4px;
-
-  font-size: 1.4rem;
-
-  letter-spacing: -0.02em;
+  width: 190px;
+  height: auto;
 }
 
 .desktop-nav {
@@ -247,7 +250,7 @@ h3 {
   color: #444;
 
   font-size: 0.88rem;
-  font-weight: 650;
+  font-weight: 500;
 }
 
 .desktop-nav a::after {
@@ -452,11 +455,11 @@ h3 {
 
   display: flex;
 
-  align-items: center;
+  align-items: flex-start;
 
   gap: 17px;
 
-  padding: 25px 28px;
+  padding: 28px;
 
   border-right:
     1px solid var(--color-border);
@@ -470,10 +473,14 @@ h3 {
 .proof-icon {
   flex: 0 0 auto;
 
+  margin-top: 1px;
+
   color: var(--color-primary-dark);
 
   font-size: 2rem;
   font-weight: 800;
+
+  line-height: 1;
 }
 
 .proof-item strong {
@@ -751,9 +758,11 @@ h3 {
 
 @media (max-width: 760px) {
 
-  body {
-    padding-bottom: 72px;
+  .brand-logo {
+    width: 150px;
   }
+
+}
 
   .container {
     width: min(
@@ -771,12 +780,17 @@ h3 {
   }
 
   .btn-header {
-    padding: 0 16px;
+  min-height: 46px;
 
-    min-height: 42px;
+  gap: 9px;
 
-    font-size: 0.76rem;
-  }
+  color: #fff;
+  background: #25d366;
+}
+
+.btn-header:hover {
+  background: #1ebe5d;
+}
 
   .hero-grid {
     min-height: auto;
