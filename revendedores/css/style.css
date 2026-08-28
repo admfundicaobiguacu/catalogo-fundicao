@@ -762,8 +762,6 @@ h3 {
     width: 150px;
   }
 
-}
-
   .container {
     width: min(
       calc(100% - 32px),
