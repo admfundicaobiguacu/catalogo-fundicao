@@ -1090,6 +1090,251 @@ h3 {
 }
 
 /* =========================================
+   GARANTIA
+========================================= */
+
+.warranty-section {
+  background:
+    radial-gradient(
+      circle at 22% 48%,
+      rgba(232, 184, 0, 0.08),
+      transparent 28%
+    ),
+    #fff;
+}
+
+.warranty-grid {
+  display: grid;
+
+  grid-template-columns:
+    minmax(280px, 0.7fr)
+    minmax(0, 1.3fr);
+
+  align-items: center;
+
+  gap: 100px;
+}
+
+
+/* DESTAQUE NUMÉRICO */
+
+.warranty-highlight {
+  position: relative;
+
+  min-height: 470px;
+
+  display: flex;
+
+  flex-direction: column;
+
+  align-items: center;
+  justify-content: center;
+
+  border:
+    1px solid var(--color-border);
+
+  border-radius: var(--radius-lg);
+
+  background:
+    linear-gradient(
+      145deg,
+      #fafaf8,
+      #f1f1ed
+    );
+
+  overflow: hidden;
+}
+
+.warranty-highlight::before {
+  content: "";
+
+  position: absolute;
+
+  width: 260px;
+  height: 260px;
+
+  border-radius: 50%;
+
+  background:
+    rgba(232, 184, 0, 0.09);
+
+  filter: blur(2px);
+}
+
+.warranty-number,
+.warranty-years,
+.warranty-label {
+  position: relative;
+
+  z-index: 1;
+}
+
+.warranty-number {
+  color: var(--color-primary-dark);
+
+  font-size: clamp(
+    8rem,
+    13vw,
+    12rem
+  );
+
+  font-weight: 900;
+
+  line-height: 0.75;
+
+  letter-spacing: -0.08em;
+}
+
+.warranty-years {
+  margin-top: 24px;
+
+  color: var(--color-dark);
+
+  font-size: 2rem;
+  font-weight: 900;
+
+  letter-spacing: 0.15em;
+}
+
+.warranty-label {
+  margin-top: 5px;
+
+  color: var(--color-muted);
+
+  font-size: 0.74rem;
+  font-weight: 800;
+
+  letter-spacing: 0.18em;
+}
+
+
+/* CONTEÚDO */
+
+.warranty-content {
+  max-width: 650px;
+}
+
+.warranty-content h2 {
+  margin-bottom: 24px;
+}
+
+.warranty-intro {
+  max-width: 590px;
+
+  margin-bottom: 36px;
+
+  font-size: 1.02rem;
+
+  line-height: 1.75;
+}
+
+
+/* CARDS */
+
+.warranty-cards {
+  display: grid;
+
+  grid-template-columns:
+    repeat(2, 1fr);
+
+  gap: 16px;
+}
+
+.warranty-card {
+  display: flex;
+
+  gap: 17px;
+
+  padding: 26px;
+
+  border:
+    1px solid var(--color-border);
+
+  border-radius: var(--radius-md);
+
+  background: #fff;
+}
+
+.warranty-card-icon {
+  width: 36px;
+  height: 36px;
+
+  flex: 0 0 auto;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 50%;
+
+  color: #222;
+  background: var(--color-primary);
+
+  font-size: 0.7rem;
+  font-weight: 900;
+}
+
+.warranty-category {
+  display: block;
+
+  margin-bottom: 9px;
+
+  color: var(--color-primary-dark);
+
+  font-size: 0.68rem;
+  font-weight: 900;
+
+  letter-spacing: 0.1em;
+}
+
+.warranty-card h3 {
+  margin-bottom: 11px;
+
+  font-size: 1.1rem;
+}
+
+.warranty-card p {
+  color: var(--color-muted);
+
+  font-size: 0.85rem;
+
+  line-height: 1.65;
+}
+
+
+/* OBSERVAÇÃO */
+
+.warranty-note {
+  margin-top: 22px;
+
+  padding: 20px 22px;
+
+  border-left:
+    3px solid var(--color-primary);
+
+  background: var(--color-bg-soft);
+}
+
+.warranty-note strong {
+  display: block;
+
+  margin-bottom: 7px;
+
+  color: var(--color-dark);
+
+  font-size: 0.88rem;
+}
+
+.warranty-note p {
+  color: var(--color-muted);
+
+  font-size: 0.8rem;
+
+  line-height: 1.65;
+}
+
+/* =========================================
    MOBILE WHATSAPP
 ========================================= */
 
@@ -1116,6 +1361,17 @@ h3 {
 .reseller-grid {
   grid-template-columns:
     repeat(2, 1fr);
+
+.warranty-grid {
+  gap: 50px;
+}
+
+.warranty-highlight {
+  min-height: 420px;
+}
+
+.warranty-cards {
+  grid-template-columns: 1fr;
 }
 
 .stock-list {
@@ -1172,6 +1428,31 @@ h3 {
 
 .reseller-heading {
   text-align: left;
+
+.warranty-grid {
+  grid-template-columns: 1fr;
+
+  gap: 45px;
+}
+
+.warranty-highlight {
+  min-height: 330px;
+}
+
+.warranty-number {
+  font-size: 8rem;
+}
+
+.warranty-years {
+  font-size: 1.6rem;
+}
+
+.warranty-content {
+  max-width: none;
+}
+
+.warranty-cards {
+  grid-template-columns: 1fr;
 }
 
 .reseller-heading p {
