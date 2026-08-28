@@ -110,9 +110,9 @@ h1 {
   max-width: 720px;
 
   font-size: clamp(
-    2.8rem,
-    5.2vw,
-    5rem
+    2.7rem,
+    4.6vw,
+    4.5rem
   );
 
   font-weight: 800;
