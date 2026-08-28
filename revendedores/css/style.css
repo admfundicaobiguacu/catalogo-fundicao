@@ -188,8 +188,14 @@ h3 {
 .btn-header {
   min-height: 46px;
 
+  gap: 10px;
+
   color: #fff;
-  background: var(--color-dark);
+  background: #25d366;
+}
+
+.btn-header:hover {
+  background: #1ebe5d;
 }
 
 
