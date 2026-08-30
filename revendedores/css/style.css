@@ -1791,6 +1791,245 @@ h3 {
 }
 
 /* =========================================
+   36 ANOS DE HISTÓRIA
+========================================= */
+
+.history-section {
+  overflow: hidden;
+
+  background:
+    radial-gradient(
+      circle at 82% 42%,
+      rgba(232, 184, 0, 0.08),
+      transparent 30%
+    ),
+    var(--color-dark);
+}
+
+
+.history-grid {
+  display: grid;
+
+  grid-template-columns:
+    minmax(0, 0.9fr)
+    minmax(0, 1.1fr);
+
+  align-items: center;
+
+  gap: 90px;
+}
+
+
+/* CONTEÚDO */
+
+.history-content {
+  max-width: 540px;
+}
+
+.history-content .eyebrow {
+  color: var(--color-primary);
+}
+
+
+/* 36 ANOS */
+
+.history-number-block {
+  display: flex;
+
+  align-items: flex-end;
+
+  gap: 24px;
+
+  margin-bottom: 34px;
+}
+
+.history-number {
+  color:
+    var(--color-primary);
+
+  font-size: clamp(
+    8rem,
+    12vw,
+    11rem
+  );
+
+  font-weight: 900;
+
+  line-height: 0.72;
+
+  letter-spacing: -0.08em;
+}
+
+.history-years {
+  padding-bottom: 4px;
+
+  color:
+    rgba(255, 255, 255, 0.92);
+
+  font-size: 0.8rem;
+  font-weight: 900;
+
+  line-height: 1.45;
+
+  letter-spacing: 0.14em;
+}
+
+
+/* TEXTO */
+
+.history-content h2 {
+  max-width: 520px;
+
+  margin-bottom: 27px;
+
+  color: #fff;
+
+  font-size: clamp(
+    2.2rem,
+    3.3vw,
+    3.3rem
+  );
+}
+
+.history-content > p {
+  max-width: 500px;
+
+  margin-bottom: 17px;
+
+  color:
+    rgba(255, 255, 255, 0.67);
+
+  font-size: 0.98rem;
+
+  line-height: 1.75;
+}
+
+
+/* ASSINATURA */
+
+.history-signature {
+  display: flex;
+
+  align-items: center;
+
+  gap: 17px;
+
+  margin-top: 34px;
+}
+
+.history-signature > span {
+  width: 42px;
+  height: 3px;
+
+  flex: 0 0 auto;
+
+  background:
+    var(--color-primary);
+}
+
+.history-signature strong {
+  color:
+    rgba(255, 255, 255, 0.9);
+
+  font-size: 0.82rem;
+
+  line-height: 1.5;
+}
+
+
+/* VISUAL */
+
+.history-visual {
+  position: relative;
+
+  min-width: 0;
+
+  padding-bottom: 35px;
+}
+
+.history-photo {
+  min-height: 540px;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  overflow: hidden;
+
+  border:
+    1px solid rgba(255, 255, 255, 0.1);
+
+  border-radius:
+    var(--radius-lg);
+
+  background:
+    linear-gradient(
+      145deg,
+      #383a3d,
+      #282a2d
+    );
+
+  color:
+    rgba(255, 255, 255, 0.25);
+
+  font-size: 0.7rem;
+  font-weight: 800;
+
+  letter-spacing: 0.15em;
+
+  text-align: center;
+}
+
+
+/* BADGE 1990 */
+
+.history-badge {
+  position: absolute;
+
+  left: -35px;
+  bottom: 0;
+
+  min-width: 190px;
+
+  padding:
+    24px 28px;
+
+  border-radius:
+    var(--radius-md);
+
+  background:
+    var(--color-primary);
+
+  box-shadow:
+    0 18px 40px rgba(0, 0, 0, 0.22);
+}
+
+.history-badge strong {
+  display: block;
+
+  color: #202124;
+
+  font-size: 1.8rem;
+
+  line-height: 1;
+}
+
+.history-badge span {
+  display: block;
+
+  margin-top: 8px;
+
+  color:
+    rgba(32, 33, 36, 0.75);
+
+  font-size: 0.63rem;
+  font-weight: 900;
+
+  letter-spacing: 0.1em;
+}
+
+/* =========================================
    MOBILE WHATSAPP
 ========================================= */
 
@@ -1911,6 +2150,19 @@ h3 {
 
   .logistics-card {
     padding: 32px;
+  
+    /* 36 ANOS DE HISTÓRIA */
+
+  .history-grid {
+    gap: 50px;
+  }
+
+  .history-photo {
+    min-height: 470px;
+  }
+
+  .history-badge {
+    left: -20px;
   }
 
 
@@ -2404,4 +2656,55 @@ h3 {
   .logistics-icon {
     width: 46px;
     height: 46px;
+  
+    /* 36 ANOS DE HISTÓRIA */
+
+  .history-grid {
+    grid-template-columns: 1fr;
+
+    gap: 48px;
+  }
+
+  .history-content {
+    max-width: none;
+  }
+
+  .history-number-block {
+    gap: 18px;
+
+    margin-bottom: 30px;
+  }
+
+  .history-number {
+    font-size: 8rem;
+  }
+
+  .history-years {
+    font-size: 0.7rem;
+  }
+
+  .history-content h2 {
+    max-width: none;
+  }
+
+  .history-content > p {
+    max-width: none;
+  }
+
+  .history-photo {
+    min-height: 360px;
+  }
+
+  .history-visual {
+    padding-bottom: 42px;
+  }
+
+  .history-badge {
+    left: 18px;
+    bottom: 0;
+
+    min-width: 170px;
+
+    padding:
+      20px 22px;
   }
