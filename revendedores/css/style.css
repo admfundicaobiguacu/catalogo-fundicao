@@ -2330,21 +2330,13 @@ h3 {
 
   align-items: center;
   justify-content: center;
-
-  padding:
-    10px 15px;
-
-  border-radius:
-    var(--radius-sm);
-
-  background: #fff;
 }
 
 .footer-logo {
   display: block;
 
   width: auto;
-  height: 48px;
+  height: 54px;
 }
 
 
@@ -2441,17 +2433,31 @@ h3 {
 .footer-bottom {
   min-height: 68px;
 
-  display: flex;
+  display: grid;
 
-  flex-wrap: wrap;
+  grid-template-columns:
+    minmax(0, 1fr)
+    auto
+    minmax(0, 1fr);
 
   align-items: center;
-  justify-content: space-between;
 
   gap: 15px;
 
   border-top:
     1px solid rgba(255, 255, 255, 0.08);
+}
+
+.footer-bottom p {
+  grid-column: 2;
+
+  text-align: center;
+}
+
+.footer-bottom > a {
+  grid-column: 3;
+
+  justify-self: end;
 }
 
 .footer-bottom p,
