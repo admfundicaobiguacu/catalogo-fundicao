@@ -1488,6 +1488,129 @@ h3 {
 }
 
 /* =========================================
+   COMO FUNCIONA
+========================================= */
+
+.process-section {
+  background: var(--color-bg-soft);
+}
+
+.process-heading {
+  max-width: 790px;
+}
+
+.process-heading p {
+  max-width: 650px;
+
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+/* ETAPAS */
+
+.process-grid {
+  display: grid;
+
+  grid-template-columns:
+    repeat(4, 1fr);
+
+  gap: 0;
+}
+
+.process-step {
+  min-width: 0;
+
+  padding-right: 34px;
+}
+
+.process-step:last-child {
+  padding-right: 0;
+}
+
+
+/* NÚMERO + LINHA */
+
+.process-top {
+  display: flex;
+
+  align-items: center;
+
+  margin-bottom: 30px;
+}
+
+.process-number {
+  width: 54px;
+  height: 54px;
+
+  flex: 0 0 auto;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 50%;
+
+  color: #222;
+  background: var(--color-primary);
+
+  font-size: 0.78rem;
+  font-weight: 900;
+
+  letter-spacing: 0.05em;
+}
+
+.process-line {
+  width: 100%;
+  height: 1px;
+
+  margin-left: 14px;
+
+  background:
+    var(--color-border);
+}
+
+
+/* CONTEÚDO */
+
+.process-step h3 {
+  max-width: 210px;
+
+  margin-bottom: 14px;
+
+  font-size: 1.18rem;
+}
+
+.process-step p {
+  max-width: 230px;
+
+  color: var(--color-muted);
+
+  font-size: 0.88rem;
+
+  line-height: 1.7;
+}
+
+
+/* CTA FINAL */
+
+.process-footer {
+  margin-top: 60px;
+
+  text-align: center;
+}
+
+.process-footer p {
+  margin-bottom: 18px;
+
+  color: var(--color-dark);
+
+  font-size: 0.95rem;
+  font-weight: 700;
+}
+
+/* =========================================
    MOBILE WHATSAPP
 ========================================= */
 
@@ -1582,7 +1705,23 @@ h3 {
 
 .production-photo-main {
   min-height: 394px;
-}
+
+  /* COMO FUNCIONA */
+
+  .process-grid {
+    grid-template-columns:
+      repeat(2, 1fr);
+
+    row-gap: 50px;
+  }
+
+  .process-step:nth-child(2) {
+    padding-right: 0;
+  }
+
+  .process-step p {
+    max-width: 300px;
+  }
 
 
 /* -----------------------------------------
@@ -1956,3 +2095,85 @@ h3 {
 .production-content {
   max-width: none;
 }
+
+  /* COMO FUNCIONA */
+
+  .process-heading {
+    text-align: left;
+  }
+
+  .process-heading p {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .process-grid {
+    grid-template-columns: 1fr;
+
+    gap: 0;
+  }
+
+  .process-step,
+  .process-step:nth-child(2) {
+    position: relative;
+
+    padding:
+      0 0
+      42px
+      72px;
+  }
+
+  .process-step:last-child {
+    padding-bottom: 0;
+  }
+
+  .process-top {
+    position: absolute;
+
+    left: 0;
+    top: 0;
+
+    display: block;
+
+    margin: 0;
+  }
+
+  .process-number {
+    width: 48px;
+    height: 48px;
+  }
+
+  .process-line {
+    position: absolute;
+
+    left: 23px;
+    top: 58px;
+
+    width: 1px;
+    height: calc(100% + 58px);
+
+    margin: 0;
+
+    background:
+      var(--color-border);
+  }
+
+  .process-step h3 {
+    max-width: none;
+
+    padding-top: 3px;
+  }
+
+  .process-step p {
+    max-width: none;
+  }
+
+  .process-footer {
+    margin-top: 48px;
+
+    text-align: left;
+  }
+
+  .process-footer .btn {
+    width: 100%;
+  }
