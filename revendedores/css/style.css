@@ -1609,6 +1609,188 @@ h3 {
 }
 
 /* =========================================
+   ENVIO E PAGAMENTO
+========================================= */
+
+.logistics-section {
+  background: #fff;
+}
+
+.logistics-heading {
+  max-width: 760px;
+}
+
+.logistics-heading p {
+  max-width: 590px;
+
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+/* GRID */
+
+.logistics-grid {
+  max-width: 1000px;
+
+  margin: 0 auto;
+
+  display: grid;
+
+  grid-template-columns:
+    repeat(2, minmax(0, 1fr));
+
+  gap: 22px;
+}
+
+
+/* CARD */
+
+.logistics-card {
+  padding: 38px;
+
+  border:
+    1px solid var(--color-border);
+
+  border-radius: var(--radius-lg);
+
+  background: #fff;
+
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease;
+}
+
+.logistics-card:hover {
+  transform: translateY(-4px);
+
+  box-shadow: var(--shadow-soft);
+}
+
+
+/* CABEÇALHO */
+
+.logistics-card-top {
+  display: flex;
+
+  align-items: flex-start;
+
+  gap: 20px;
+
+  padding-bottom: 28px;
+
+  border-bottom:
+    1px solid var(--color-border);
+}
+
+.logistics-icon {
+  width: 52px;
+  height: 52px;
+
+  flex: 0 0 auto;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 50%;
+
+  color: #222;
+
+  background:
+    var(--color-primary);
+
+  font-size: 1.1rem;
+  font-weight: 900;
+}
+
+.logistics-label {
+  display: block;
+
+  margin-bottom: 8px;
+
+  color:
+    var(--color-primary-dark);
+
+  font-size: 0.7rem;
+  font-weight: 900;
+
+  letter-spacing: 0.12em;
+}
+
+.logistics-card h3 {
+  max-width: 330px;
+
+  font-size: 1.25rem;
+}
+
+
+/* OPÇÕES */
+
+.logistics-options {
+  margin-top: 28px;
+
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 21px;
+}
+
+.logistics-option {
+  display: flex;
+
+  align-items: flex-start;
+
+  gap: 14px;
+}
+
+.logistics-check {
+  width: 28px;
+  height: 28px;
+
+  flex: 0 0 auto;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 50%;
+
+  color: #222;
+
+  background:
+    rgba(232, 184, 0, 0.18);
+
+  font-size: 0.72rem;
+  font-weight: 900;
+}
+
+.logistics-option strong {
+  display: block;
+
+  margin-bottom: 3px;
+
+  color:
+    var(--color-dark);
+
+  font-size: 0.92rem;
+}
+
+.logistics-option div > span {
+  display: block;
+
+  color:
+    var(--color-muted);
+
+  font-size: 0.8rem;
+
+  line-height: 1.55;
+}
+
+/* =========================================
    MOBILE WHATSAPP
 ========================================= */
 
@@ -1720,6 +1902,15 @@ h3 {
 
   .process-step p {
     max-width: 300px;
+  
+    /* ENVIO E PAGAMENTO */
+
+  .logistics-grid {
+    max-width: 850px;
+  }
+
+  .logistics-card {
+    padding: 32px;
   }
 
 
@@ -2179,4 +2370,38 @@ h3 {
 
   .process-footer .btn {
     width: 100%;
+  
+    /* ENVIO E PAGAMENTO */
+
+  .logistics-heading {
+    text-align: left;
+  }
+
+  .logistics-heading p {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .logistics-grid {
+    max-width: none;
+
+    grid-template-columns: 1fr;
+
+    gap: 16px;
+  }
+
+  .logistics-card {
+    padding: 28px 24px;
+
+    border-radius:
+      var(--radius-md);
+  }
+
+  .logistics-card-top {
+    gap: 16px;
+  }
+
+  .logistics-icon {
+    width: 46px;
+    height: 46px;
   }
