@@ -1510,22 +1510,20 @@ h3 {
 /* ETAPAS */
 
 .process-grid {
+  max-width: 1120px;
+
+  margin: 0 auto;
+
   display: grid;
 
   grid-template-columns:
-    repeat(4, 1fr);
+    repeat(4, minmax(0, 1fr));
 
-  gap: 0;
+  column-gap: 28px;
 }
 
 .process-step {
   min-width: 0;
-
-  padding-right: 34px;
-}
-
-.process-step:last-child {
-  padding-right: 0;
 }
 
 
@@ -1709,15 +1707,16 @@ h3 {
   /* COMO FUNCIONA */
 
   .process-grid {
-    grid-template-columns:
-      repeat(2, 1fr);
+  max-width: 820px;
 
-    row-gap: 50px;
-  }
+  margin: 0 auto;
 
-  .process-step:nth-child(2) {
-    padding-right: 0;
-  }
+  grid-template-columns:
+    repeat(2, 1fr);
+
+  column-gap: 28px;
+  row-gap: 50px;
+}
 
   .process-step p {
     max-width: 300px;
@@ -2108,10 +2107,14 @@ h3 {
   }
 
   .process-grid {
-    grid-template-columns: 1fr;
+  max-width: none;
 
-    gap: 0;
-  }
+  margin: 0;
+
+  grid-template-columns: 1fr;
+
+  gap: 0;
+}s
 
   .process-step,
   .process-step:nth-child(2) {
