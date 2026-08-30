@@ -2027,6 +2027,7 @@ h3 {
   font-weight: 900;
 
   letter-spacing: 0.1em;
+}
 
 /* =========================================
    DÚVIDAS FREQUENTES
@@ -2204,7 +2205,6 @@ h3 {
   display: none;
 }
 
-
 /* =========================================
    RESPONSIVE
 ========================================= */
@@ -2279,37 +2279,35 @@ h3 {
     grid-template-columns: 1fr;
   }
 
-.production-grid {
-  gap: 45px;
-}
+  .production-grid {
+    gap: 45px;
+  }
 
-.production-gallery {
-  grid-template-rows:
-    190px
-    190px;
-}
+  .production-gallery {
+    grid-template-rows:
+      190px
+      190px;
+  }
 
-.production-photo-main {
-  min-height: 394px;
-
-  /* COMO FUNCIONA */
+  .production-photo-main {
+    min-height: 394px;
+  }
 
   .process-grid {
-  max-width: 820px;
+    max-width: 820px;
 
-  margin: 0 auto;
+    margin: 0 auto;
 
-  grid-template-columns:
-    repeat(2, 1fr);
+    grid-template-columns:
+      repeat(2, 1fr);
 
-  column-gap: 28px;
-  row-gap: 50px;
-}
+    column-gap: 28px;
+    row-gap: 50px;
+  }
 
   .process-step p {
     max-width: 300px;
-  
-    /* ENVIO E PAGAMENTO */
+  }
 
   .logistics-grid {
     max-width: 850px;
@@ -2317,8 +2315,7 @@ h3 {
 
   .logistics-card {
     padding: 32px;
-  
-    /* 36 ANOS DE HISTÓRIA */
+  }
 
   .history-grid {
     gap: 50px;
@@ -2330,12 +2327,13 @@ h3 {
 
   .history-badge {
     left: -20px;
-  
-    /* DÚVIDAS FREQUENTES */
+  }
 
   .faq-grid {
     gap: 55px;
   }
+
+}
 
 
 /* -----------------------------------------
@@ -2649,66 +2647,36 @@ h3 {
   }
 
 
-  /* WHATSAPP FIXO */
+  /* PRODUÇÃO E QUALIDADE */
 
-  .mobile-whatsapp {
-    position: fixed;
+  .production-grid {
+    grid-template-columns: 1fr;
 
-    left: 12px;
-    right: 12px;
-    bottom: 12px;
-
-    z-index: 200;
-
-    min-height: 54px;
-
-    display: flex;
-
-    align-items: center;
-    justify-content: center;
-
-    color: #1f1f1f;
-
-    background: var(--color-primary);
-
-    border-radius: var(--radius-sm);
-
-    box-shadow:
-      0 12px 35px rgba(0, 0, 0, 0.18);
-
-    font-size: 0.86rem;
-    font-weight: 850;
+    gap: 42px;
   }
 
-/* PRODUÇÃO E QUALIDADE */
+  .production-gallery {
+    grid-template-columns:
+      repeat(2, 1fr);
 
-.production-grid {
-  grid-template-columns: 1fr;
+    grid-template-rows:
+      210px
+      150px;
+  }
 
-  gap: 42px;
-}
+  .production-photo-main {
+    grid-column:
+      1 / 3;
 
-.production-gallery {
-  grid-template-columns:
-    repeat(2, 1fr);
+    grid-row: auto;
 
-  grid-template-rows:
-    210px
-    150px;
-}
+    min-height: 210px;
+  }
 
-.production-photo-main {
-  grid-column:
-    1 / 3;
+  .production-content {
+    max-width: none;
+  }
 
-  grid-row: auto;
-
-  min-height: 210px;
-}
-
-.production-content {
-  max-width: none;
-}
 
   /* COMO FUNCIONA */
 
@@ -2722,14 +2690,14 @@ h3 {
   }
 
   .process-grid {
-  max-width: none;
+    max-width: none;
 
-  margin: 0;
+    margin: 0;
 
-  grid-template-columns: 1fr;
+    grid-template-columns: 1fr;
 
-  gap: 0;
-}s
+    gap: 0;
+  }
 
   .process-step,
   .process-step:nth-child(2) {
@@ -2778,6 +2746,7 @@ h3 {
 
   .process-step h3 {
     max-width: none;
+    min-height: 0;
 
     padding-top: 3px;
   }
@@ -2794,8 +2763,10 @@ h3 {
 
   .process-footer .btn {
     width: 100%;
-  
-    /* ENVIO E PAGAMENTO */
+  }
+
+
+  /* ENVIO E PAGAMENTO */
 
   .logistics-heading {
     text-align: left;
@@ -2828,8 +2799,10 @@ h3 {
   .logistics-icon {
     width: 46px;
     height: 46px;
-  
-    /* 36 ANOS DE HISTÓRIA */
+  }
+
+
+  /* 36 ANOS DE HISTÓRIA */
 
   .history-grid {
     grid-template-columns: 1fr;
@@ -2879,8 +2852,10 @@ h3 {
 
     padding:
       20px 22px;
-  
-    /* DÚVIDAS FREQUENTES */
+  }
+
+
+  /* DÚVIDAS FREQUENTES */
 
   .faq-grid {
     grid-template-columns: 1fr;
@@ -2916,4 +2891,38 @@ h3 {
     padding:
       0 15px
       22px 0;
-    }
+  }
+
+
+  /* WHATSAPP FIXO */
+
+  .mobile-whatsapp {
+    position: fixed;
+
+    left: 12px;
+    right: 12px;
+    bottom: 12px;
+
+    z-index: 200;
+
+    min-height: 54px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    color: #1f1f1f;
+
+    background: var(--color-primary);
+
+    border-radius: var(--radius-sm);
+
+    box-shadow:
+      0 12px 35px rgba(0, 0, 0, 0.18);
+
+    font-size: 0.86rem;
+    font-weight: 850;
+  }
+
+}

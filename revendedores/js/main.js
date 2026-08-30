@@ -1,24 +1,18 @@
 document.addEventListener("DOMContentLoaded", () => {
 
-  /*
-   * Preparação inicial da landing B2B.
-   *
-   * O JavaScript será mantido propositalmente pequeno.
-   * Mais adiante entraremos com:
-   *
-   * - FAQ accordion
-   * - comportamento do WhatsApp mobile
-   * - tracking de CTAs
-   * - pequenos efeitos de interface
-   */
+  /* =========================================
+     TRACKING INICIAL DOS CTAs
+  ========================================= */
 
-  const ctas = document.querySelectorAll("[data-cta]");
+  const ctas =
+    document.querySelectorAll("[data-cta]");
 
   ctas.forEach((cta) => {
 
     cta.addEventListener("click", () => {
 
-      const origem = cta.dataset.cta;
+      const origem =
+        cta.dataset.cta;
 
       console.log(
         `CTA WhatsApp: ${origem}`
@@ -28,57 +22,58 @@ document.addEventListener("DOMContentLoaded", () => {
 
   });
 
-});
 
-/* =========================================
-   FAQ ACCORDION
-========================================= */
+  /* =========================================
+     FAQ ACCORDION
+  ========================================= */
 
-const faqQuestions =
-  document.querySelectorAll(".faq-question");
+  const faqQuestions =
+    document.querySelectorAll(".faq-question");
 
-faqQuestions.forEach((question) => {
+  faqQuestions.forEach((question) => {
 
-  question.addEventListener("click", () => {
+    question.addEventListener("click", () => {
 
-    const item =
-      question.closest(".faq-item");
+      const item =
+        question.closest(".faq-item");
 
-    const isOpen =
-      item.classList.contains("is-open");
+      const isOpen =
+        item.classList.contains("is-open");
 
 
-    /* Fecha os demais */
+      /* Fecha os demais */
 
-    document
-      .querySelectorAll(".faq-item.is-open")
-      .forEach((openItem) => {
+      document
+        .querySelectorAll(".faq-item.is-open")
+        .forEach((openItem) => {
 
-        openItem.classList.remove("is-open");
+          openItem.classList.remove("is-open");
 
-        const openButton =
-          openItem.querySelector(".faq-question");
+          const openButton =
+            openItem.querySelector(".faq-question");
 
-        openButton.setAttribute(
+          openButton.setAttribute(
+            "aria-expanded",
+            "false"
+          );
+
+        });
+
+
+      /* Abre o selecionado */
+
+      if (!isOpen) {
+
+        item.classList.add("is-open");
+
+        question.setAttribute(
           "aria-expanded",
-          "false"
+          "true"
         );
 
-      });
+      }
 
-
-    /* Abre o selecionado */
-
-    if (!isOpen) {
-
-      item.classList.add("is-open");
-
-      question.setAttribute(
-        "aria-expanded",
-        "true"
-      );
-
-    }
+    });
 
   });
 
