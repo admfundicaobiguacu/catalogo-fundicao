@@ -2086,37 +2086,29 @@ h3 {
 
 .faq-question {
   width: 100%;
-
   display: flex;
-
   align-items: center;
   justify-content: space-between;
-
   gap: 30px;
-
-  padding:
-    27px 0;
-
+  padding: 27px 0;
   border: 0;
-
-  color:
-    var(--color-dark);
-
+  color: var(--color-dark);
   background: transparent;
-
   font-family: inherit;
-
   font-size: 1.05rem;
-  font-weight: 750;
-
+  font-weight: 500;
   text-align: left;
-
   cursor: pointer;
+  transition: color 0.25s ease, font-weight 0.25s ease;
 }
 
 .faq-question:hover {
   color:
     var(--color-primary-dark);
+}
+
+.faq-item.is-open .faq-question {
+  font-weight: 750;
 }
 
 
