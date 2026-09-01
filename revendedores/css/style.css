@@ -1442,6 +1442,14 @@ h3 {
   text-align: center;
 }
 
+.production-photo img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+  object-position: center;
+}
+
 .production-photo-main {
   grid-row:
     1 / 3;
