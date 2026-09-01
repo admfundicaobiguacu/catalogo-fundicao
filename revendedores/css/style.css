@@ -842,7 +842,7 @@ h3 {
   height: 520px;
   display: block;
   object-fit: cover;
-  object-position: center;
+  object-position: center 48%;
 }
 
 .featured-product-image {
