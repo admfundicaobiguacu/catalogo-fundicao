@@ -1457,6 +1457,18 @@ h3 {
   min-height: 454px;
 }
 
+.production-video {
+  overflow: hidden;
+}
+
+.production-video video {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+  object-position: center;
+}
+
 
 /* CONTEÚDO */
 
