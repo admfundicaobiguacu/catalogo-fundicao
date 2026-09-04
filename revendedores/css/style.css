@@ -3062,32 +3062,56 @@ h3 {
 
   /* GARANTIA */
 
-  .warranty-grid {
-    grid-template-columns: 1fr;
+.warranty-section {
+  padding-top: 52px;
+  padding-bottom: 48px;
+}
 
-    gap: 42px;
-  }
+.warranty-grid {
+  grid-template-columns: 1fr;
+  gap: 32px;
+}
 
-  .warranty-highlight {
-    min-height: 330px;
-  }
+.warranty-highlight {
+  min-height: 280px;
+}
 
-  .warranty-number {
-    font-size: 8rem;
-  }
+.warranty-number {
+  font-size: 6.5rem;
+}
 
-  .warranty-years {
-    font-size: 1.6rem;
-  }
+.warranty-years {
+  font-size: 1.35rem;
+}
 
-  .warranty-content {
-    max-width: none;
-  }
+.warranty-content {
+  max-width: none;
+}
 
-  .warranty-cards {
-    grid-template-columns: 1fr;
-  }
+.warranty-cards {
+  grid-template-columns: 1fr;
+  gap: 14px;
+}
 
+.warranty-card {
+  gap: 14px;
+  padding: 20px 18px;
+}
+
+.warranty-card h3 {
+  margin-bottom: 8px;
+  font-size: 1rem;
+}
+
+.warranty-card p {
+  font-size: 0.82rem;
+  line-height: 1.55;
+}
+
+.warranty-note {
+  margin-top: 16px;
+  padding: 18px 18px;
+}
 
   /* PRODUÇÃO E QUALIDADE */
 
