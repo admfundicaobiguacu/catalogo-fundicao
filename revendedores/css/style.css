@@ -3404,9 +3404,3 @@ h3 {
   visibility: visible;
   transform: translateY(0);
 }
-
-/* espaço de segurança para o botão fixo */
-
-body {
-  padding-bottom: 86px;
-}

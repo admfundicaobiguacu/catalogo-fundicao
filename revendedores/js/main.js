@@ -32,17 +32,31 @@ const mobileWhatsapp =
 const hero =
   document.querySelector("#inicio");
 
-if (mobileWhatsapp && hero) {
+const footer =
+  document.querySelector("footer");
 
-  const observer =
+if (mobileWhatsapp && hero && footer) {
+
+  let heroVisible = true;
+  let footerVisible = false;
+
+  function updateMobileWhatsapp() {
+
+    if (heroVisible || footerVisible) {
+      mobileWhatsapp.classList.remove("is-visible");
+    } else {
+      mobileWhatsapp.classList.add("is-visible");
+    }
+
+  }
+
+  const heroObserver =
     new IntersectionObserver(
       ([entry]) => {
 
-        if (entry.isIntersecting) {
-          mobileWhatsapp.classList.remove("is-visible");
-        } else {
-          mobileWhatsapp.classList.add("is-visible");
-        }
+        heroVisible = entry.isIntersecting;
+
+        updateMobileWhatsapp();
 
       },
       {
@@ -50,7 +64,22 @@ if (mobileWhatsapp && hero) {
       }
     );
 
-  observer.observe(hero);
+  const footerObserver =
+    new IntersectionObserver(
+      ([entry]) => {
+
+        footerVisible = entry.isIntersecting;
+
+        updateMobileWhatsapp();
+
+      },
+      {
+        threshold: 0.05
+      }
+    );
+
+  heroObserver.observe(hero);
+  footerObserver.observe(footer);
 
 }
 
