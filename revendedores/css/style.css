@@ -3269,56 +3269,56 @@ h3 {
 
   /* 36 ANOS DE HISTÓRIA */
 
-  .history-grid {
-    grid-template-columns: 1fr;
+.history-grid {
+  grid-template-columns: 1fr;
 
-    gap: 48px;
-  }
+  gap: 36px;
+}
 
-  .history-content {
-    max-width: none;
-  }
+.history-content {
+  max-width: none;
+}
 
-  .history-number-block {
-    gap: 18px;
+.history-number-block {
+  gap: 16px;
 
-    margin-bottom: 30px;
-  }
+  margin-bottom: 24px;
+}
 
-  .history-number {
-    font-size: 8rem;
-  }
+.history-number {
+  font-size: 7rem;
+}
 
-  .history-years {
-    font-size: 0.7rem;
-  }
+.history-years {
+  font-size: 0.7rem;
+}
 
-  .history-content h2 {
-    max-width: none;
-  }
+.history-content h2 {
+  max-width: none;
+}
 
-  .history-content > p {
-    max-width: none;
-  }
+.history-content > p {
+  max-width: none;
+}
 
-  .history-photo {
-    min-height: 360px;
-  }
+.history-photo {
+  height: 420px;
+  min-height: 0;
+}
 
-  .history-visual {
-    padding-bottom: 42px;
-  }
+.history-visual {
+  padding-bottom: 36px;
+}
 
-  .history-badge {
-    left: 18px;
-    bottom: 0;
+.history-badge {
+  left: 18px;
+  bottom: 0;
 
-    min-width: 170px;
+  min-width: 170px;
 
-    padding:
-      20px 22px;
-  }
-
+  padding:
+    18px 20px;
+}
 
   /* DÚVIDAS FREQUENTES */
 
