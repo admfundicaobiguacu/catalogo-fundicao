@@ -3150,91 +3150,87 @@ h3 {
 
   /* COMO FUNCIONA */
 
-  .process-heading {
-    text-align: left;
-  }
+.process-heading {
+  text-align: left;
+}
 
-  .process-heading p {
-    margin-left: 0;
-    margin-right: 0;
-  }
+.process-heading p {
+  margin-left: 0;
+  margin-right: 0;
+}
 
-  .process-grid {
-    max-width: none;
+.process-grid {
+  max-width: none;
+  margin: 0;
 
-    margin: 0;
+  grid-template-columns: 1fr;
+  gap: 0;
+}
 
-    grid-template-columns: 1fr;
+.process-step,
+.process-step:nth-child(2) {
+  position: relative;
 
-    gap: 0;
-  }
+  padding:
+    0 0
+    32px
+    68px;
+}
 
-  .process-step,
-  .process-step:nth-child(2) {
-    position: relative;
+.process-step:last-child {
+  padding-bottom: 0;
+}
 
-    padding:
-      0 0
-      42px
-      72px;
-  }
+.process-top {
+  position: absolute;
 
-  .process-step:last-child {
-    padding-bottom: 0;
-  }
+  left: 0;
+  top: 0;
 
-  .process-top {
-    position: absolute;
+  display: block;
+  margin: 0;
+}
 
-    left: 0;
-    top: 0;
+.process-number {
+  width: 46px;
+  height: 46px;
+}
 
-    display: block;
+.process-line {
+  position: absolute;
 
-    margin: 0;
-  }
+  left: 22px;
+  top: 56px;
 
-  .process-number {
-    width: 48px;
-    height: 48px;
-  }
+  width: 1px;
+  height: calc(100% + 46px);
 
-  .process-line {
-    position: absolute;
+  margin: 0;
 
-    left: 23px;
-    top: 58px;
+  background:
+    var(--color-border);
+}
 
-    width: 1px;
-    height: calc(100% + 58px);
+.process-step h3 {
+  max-width: none;
+  min-height: 0;
 
-    margin: 0;
+  padding-top: 2px;
+}
 
-    background:
-      var(--color-border);
-  }
+.process-step p {
+  max-width: none;
+}
 
-  .process-step h3 {
-    max-width: none;
-    min-height: 0;
+.process-footer {
+  margin-top: 34px;
 
-    padding-top: 3px;
-  }
+  text-align: left;
+}
 
-  .process-step p {
-    max-width: none;
-  }
-
-  .process-footer {
-    margin-top: 48px;
-
-    text-align: left;
-  }
-
-  .process-footer .btn {
-    width: 100%;
-  }
-
+.process-footer .btn {
+  width: 100%;
+}
 
   /* ENVIO E PAGAMENTO */
 
