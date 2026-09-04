@@ -2864,9 +2864,7 @@ h3 {
   }
 
 
-  /* DESAFIOS */
-
-  /* DESAFIOS */
+   /* DESAFIOS */
 
 .challenge-grid {
   grid-template-columns: 1fr;
@@ -3403,4 +3401,14 @@ h3 {
   opacity: 1;
   visibility: visible;
   transform: translateY(0);
+}
+
+html,
+body {
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+footer {
+  margin-bottom: 0;
 }
