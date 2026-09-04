@@ -2974,24 +2974,48 @@ h3 {
 
   /* PRONTA ENTREGA */
 
-  .stock-grid {
-    grid-template-columns: 1fr;
+.stock-section {
+  padding-top: 52px;
+  padding-bottom: 56px;
+}
 
-    gap: 42px;
-  }
+.stock-grid {
+  grid-template-columns: 1fr;
+  gap: 32px;
+}
 
-  .stock-content {
-    max-width: none;
-  }
+.stock-content {
+  max-width: none;
+}
 
-  .stock-list {
-    grid-template-columns: 1fr;
-  }
+.stock-list {
+  grid-template-columns: 1fr;
+  gap: 14px;
+}
 
-  .stock-content .btn {
-    width: 100%;
-  }
+.stock-item {
+  min-height: 78px;
+  gap: 14px;
+  padding: 16px 18px;
+}
 
+.stock-check {
+  width: 32px;
+  height: 32px;
+}
+
+.stock-item strong {
+  font-size: 0.94rem;
+}
+
+.stock-item div > span {
+  margin-top: 2px;
+  font-size: 0.77rem;
+}
+
+.stock-content .btn {
+  width: 100%;
+}
 
   /* REVENDEDORES */
 
