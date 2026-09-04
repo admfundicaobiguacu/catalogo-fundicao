@@ -2940,23 +2940,36 @@ h3 {
 
   /* LETRAS DE METAL */
 
-  .featured-product-grid {
-    grid-template-columns: 1fr;
+.featured-product-section {
+  padding-top: 42px;
+  padding-bottom: 48px;
+}
 
-    gap: 42px;
-  }
+.featured-product-grid {
+  grid-template-columns: 1fr;
+  gap: 30px;
+}
 
-  .featured-product-content {
-    max-width: none;
-  }
+.featured-product-content {
+  max-width: none;
+}
 
-  .featured-image-placeholder {
-    min-height: 340px;
-  }
+.featured-image-placeholder {
+  min-height: 340px;
+}
 
-  .featured-product-content .btn {
-    width: 100%;
-  }
+.featured-product-content h2 {
+  margin-bottom: 22px;
+}
+
+.featured-product-content p {
+  margin-bottom: 15px;
+}
+
+.featured-product-content .btn {
+  width: 100%;
+  margin-top: 12px;
+}
 
 
   /* PRONTA ENTREGA */
