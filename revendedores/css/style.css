@@ -3234,39 +3234,38 @@ h3 {
 
   /* ENVIO E PAGAMENTO */
 
-  .logistics-heading {
-    text-align: left;
-  }
+.logistics-heading {
+  text-align: left;
+}
 
-  .logistics-heading p {
-    margin-left: 0;
-    margin-right: 0;
-  }
+.logistics-heading p {
+  margin-left: 0;
+  margin-right: 0;
+}
 
-  .logistics-grid {
-    max-width: none;
+.logistics-grid {
+  max-width: none;
 
-    grid-template-columns: 1fr;
+  grid-template-columns: 1fr;
 
-    gap: 16px;
-  }
+  gap: 14px;
+}
 
-  .logistics-card {
-    padding: 28px 24px;
+.logistics-card {
+  padding: 22px 20px;
 
-    border-radius:
-      var(--radius-md);
-  }
+  border-radius:
+    var(--radius-md);
+}
 
-  .logistics-card-top {
-    gap: 16px;
-  }
+.logistics-card-top {
+  gap: 14px;
+}
 
-  .logistics-icon {
-    width: 46px;
-    height: 46px;
-  }
-
+.logistics-icon {
+  width: 44px;
+  height: 44px;
+}
 
   /* 36 ANOS DE HISTÓRIA */
 
