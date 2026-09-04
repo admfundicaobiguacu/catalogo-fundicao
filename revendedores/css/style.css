@@ -3322,42 +3322,41 @@ h3 {
 
   /* DÚVIDAS FREQUENTES */
 
-  .faq-grid {
-    grid-template-columns: 1fr;
+.faq-grid {
+  grid-template-columns: 1fr;
 
-    gap: 45px;
-  }
+  gap: 34px;
+}
 
-  .faq-intro {
-    max-width: none;
-  }
+.faq-intro {
+  max-width: none;
+}
 
-  .faq-intro > p {
-    max-width: none;
-  }
+.faq-intro > p {
+  max-width: none;
+}
 
-  .faq-question {
-    gap: 20px;
+.faq-question {
+  gap: 16px;
 
-    padding:
-      23px 0;
+  padding:
+    18px 0;
 
-    font-size: 0.98rem;
-  }
+  font-size: 0.96rem;
+}
 
-  .faq-icon {
-    width: 32px;
-    height: 32px;
-  }
+.faq-icon {
+  width: 30px;
+  height: 30px;
+}
 
-  .faq-answer-inner p {
-    max-width: none;
+.faq-answer-inner p {
+  max-width: none;
 
-    padding:
-      0 15px
-      22px 0;
-  }
-
+  padding:
+    0 12px
+    18px 0;
+}
 
   /* WHATSAPP FIXO */
 
