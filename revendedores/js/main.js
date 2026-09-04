@@ -22,6 +22,38 @@ document.addEventListener("DOMContentLoaded", () => {
 
   });
 
+  /* =========================================
+   WHATSAPP STICKY MOBILE
+========================================= */
+
+const mobileWhatsapp =
+  document.querySelector(".mobile-whatsapp");
+
+const hero =
+  document.querySelector("#inicio");
+
+if (mobileWhatsapp && hero) {
+
+  const observer =
+    new IntersectionObserver(
+      ([entry]) => {
+
+        if (entry.isIntersecting) {
+          mobileWhatsapp.classList.remove("is-visible");
+        } else {
+          mobileWhatsapp.classList.add("is-visible");
+        }
+
+      },
+      {
+        threshold: 0.15
+      }
+    );
+
+  observer.observe(hero);
+
+}
+
 
   /* =========================================
      FAQ ACCORDION
