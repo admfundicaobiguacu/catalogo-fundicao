@@ -3363,34 +3363,35 @@ h3 {
 .mobile-whatsapp {
   position: fixed;
 
-  left: 12px;
-  right: 12px;
-  bottom: 12px;
+  left: 18px;
+  right: 18px;
+  bottom: 16px;
 
   z-index: 200;
 
-  min-height: 54px;
+  min-height: 50px;
 
   display: flex;
-
   align-items: center;
   justify-content: center;
 
-  color: #1f1f1f;
+  padding: 0 18px;
 
+  color: #1f1f1f;
   background: var(--color-primary);
 
   border-radius: var(--radius-sm);
 
   box-shadow:
-    0 12px 35px rgba(0, 0, 0, 0.18);
+    0 10px 28px rgba(0, 0, 0, 0.16);
 
-  font-size: 0.86rem;
+  font-size: 0.82rem;
   font-weight: 850;
 
   opacity: 0;
   visibility: hidden;
-  transform: translateY(20px);
+
+  transform: translateY(16px);
 
   transition:
     opacity 0.25s ease,
@@ -3404,4 +3405,8 @@ h3 {
   transform: translateY(0);
 }
 
+/* espaço de segurança para o botão fixo */
+
+body {
+  padding-bottom: 86px;
 }
