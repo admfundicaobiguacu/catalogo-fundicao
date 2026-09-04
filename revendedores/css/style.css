@@ -3019,35 +3019,46 @@ h3 {
 
   /* REVENDEDORES */
 
-  .reseller-heading {
-    text-align: left;
-  }
+.reseller-heading {
+  text-align: left;
+}
 
-  .reseller-heading p {
-    margin-left: 0;
-    margin-right: 0;
-  }
+.reseller-heading p {
+  margin-left: 0;
+  margin-right: 0;
+}
 
-  .reseller-grid {
-    grid-template-columns: 1fr;
-  }
+.reseller-grid {
+  grid-template-columns: 1fr;
+  gap: 18px;
+}
 
-  .reseller-card {
-    min-height: auto;
-  }
+.reseller-card {
+  min-height: auto;
+  padding: 28px 24px;
+}
 
-  .reseller-number {
-    margin-bottom: 28px;
-  }
+.reseller-number {
+  margin-bottom: 18px;
+}
 
-  .reseller-cta {
-    text-align: left;
-  }
+.reseller-card h3 {
+  margin-bottom: 12px;
+}
 
-  .reseller-cta .btn {
-    width: 100%;
-  }
+.reseller-card p {
+  font-size: 0.9rem;
+  line-height: 1.6;
+}
 
+.reseller-cta {
+  margin-top: 34px;
+  text-align: left;
+}
+
+.reseller-cta .btn {
+  width: 100%;
+}
 
   /* GARANTIA */
 
