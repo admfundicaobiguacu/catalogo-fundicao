@@ -1,26 +1,51 @@
 document.addEventListener("DOMContentLoaded", () => {
 
   /* =========================================
-     TRACKING INICIAL DOS CTAs
-  ========================================= */
+   TRACKING DOS CTAs DE WHATSAPP
+========================================= */
 
-  const ctas =
-    document.querySelectorAll("[data-cta]");
+const ctas =
+  document.querySelectorAll("[data-cta]");
 
-  ctas.forEach((cta) => {
+ctas.forEach((cta) => {
 
-    cta.addEventListener("click", () => {
+  cta.addEventListener("click", () => {
 
-      const origem =
-        cta.dataset.cta;
+    const origem =
+      cta.dataset.cta || "nao-identificado";
 
-      console.log(
-        `CTA WhatsApp: ${origem}`
-      );
+    const texto =
+      cta.textContent
+        .trim()
+        .replace(/\s+/g, " ");
 
-    });
+    console.log(
+      `CTA WhatsApp: ${origem}`
+    );
+
+    if (typeof gtag === "function") {
+
+      gtag("event", "whatsapp_click", {
+
+        landing_page:
+          "b2b_revendedores",
+
+        cta_origin:
+          origem,
+
+        cta_text:
+          texto,
+
+        page_path:
+          window.location.pathname
+
+      });
+
+    }
 
   });
+
+});
 
   /* =========================================
    WHATSAPP STICKY MOBILE
