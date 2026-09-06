@@ -2753,72 +2753,38 @@ h3 {
   }
 
 
-  /* HERO */
+  /* HERO MOBILE */
 
-  .hero-grid {
+.hero-grid {
   min-height: auto;
 
   display: flex;
   flex-direction: column;
   align-items: stretch;
 
-  gap: 34px;
+  gap: 24px;
 
-  padding-top: 34px;
-  padding-bottom: 48px;
+  padding-top: 28px;
+  padding-bottom: 32px;
 }
 
-  h1 {
-    max-width: none;
+.hero-description {
+  margin-top: 18px;
 
-    font-size: clamp(
-      2.35rem,
-      10vw,
-      3.25rem
-    );
-  }
+  font-size: 1rem;
+  line-height: 1.6;
+}
 
-  h2 {
-    font-size: clamp(
-      2rem,
-      8vw,
-      2.8rem
-    );
-  }
+.hero-actions {
+  margin-top: 22px;
+}
 
-  .hero-description {
-    margin-top: 22px;
+.hero-microcopy {
+  margin-top: 12px;
 
-    font-size: 1rem;
-
-    line-height: 1.65;
-  }
-
-  .hero-actions {
-    margin-top: 28px;
-  }
-
-  .hero-actions .btn {
-    width: 100%;
-
-    min-height: 54px;
-
-    padding:
-      10px 16px;
-
-    text-align: center;
-
-    line-height: 1.3;
-  }
-
-  .hero-microcopy {
-    text-align: center;
-
-    line-height: 1.5;
-  }
-
-
-  /* HERO VISUAL */
+  text-align: center;
+  line-height: 1.45;
+}
 
 .hero-visual {
   min-height: 0;
