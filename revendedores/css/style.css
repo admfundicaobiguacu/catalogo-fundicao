@@ -310,12 +310,12 @@ h3 {
   display: grid;
 
   grid-template-columns:
-    minmax(0, 1.05fr)
-    minmax(400px, 0.95fr);
+    minmax(0, 0.9fr)
+    minmax(440px, 1.1fr);
 
   align-items: center;
 
-  gap: 70px;
+  gap: 50px;
 
   padding-top: 60px;
   padding-bottom: 60px;
