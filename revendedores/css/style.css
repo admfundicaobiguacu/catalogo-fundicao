@@ -357,9 +357,23 @@ h3 {
 ========================================= */
 
 .hero-visual {
-  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
 
-  min-height: 500px;
+  width: 100%;
+
+  position: relative;
+}
+
+.hero-image {
+  display: block;
+
+  width: 100%;
+  max-width: 560px;
+  height: auto;
+
+  object-fit: contain;
 }
 
 .hero-product {
@@ -2801,36 +2815,25 @@ h3 {
 
   /* HERO VISUAL */
 
-  .hero-visual {
-    min-height: 220px;
-  }
+.hero-visual {
+  min-height: 0;
 
-  .hero-product-main {
-    width: 68%;
-    height: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
-    left: 0;
-    top: 110px;
-  }
+  width: 100%;
+}
 
-  .hero-product-main strong {
-    font-size: 1.8rem;
-  }
+.hero-image {
+  display: block;
 
-  .hero-product-secondary {
-    width: 42%;
-    height: 185px;
+  width: 100%;
+  max-width: 420px;
+  height: auto;
 
-    right: 0;
-    top: 20px;
-  }
-
-  .hero-product-small {
-    width: 70px;
-    height: 190px;
-
-    right: 13%;
-  }
+  object-fit: contain;
+}
 
 
   /* PROVAS RÁPIDAS */
