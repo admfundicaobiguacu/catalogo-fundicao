@@ -356,6 +356,21 @@ h3 {
   color: var(--color-primary-dark);
 }
 
+.hero-actions .btn {
+  width: 100%;
+  min-height: 58px;
+
+  padding:
+    12px 14px;
+
+  font-size: 0.78rem;
+
+  gap: 8px;
+
+  text-align: center;
+  line-height: 1.2;
+}
+
 
 /* =========================================
    HERO VISUAL PLACEHOLDER
