@@ -305,17 +305,22 @@ h3 {
 }
 
 .hero-grid {
+  width: min(
+    calc(100% - 48px),
+    1280px
+  );
+
   min-height: 620px;
 
   display: grid;
 
   grid-template-columns:
-    minmax(0, 0.9fr)
-    minmax(440px, 1.1fr);
+    minmax(0, 1fr)
+    minmax(0, 1fr);
 
   align-items: center;
 
-  gap: 50px;
+  gap: 40px;
 
   padding-top: 60px;
   padding-bottom: 60px;
