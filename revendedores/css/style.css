@@ -3,13 +3,16 @@
 ========================================= */
 
 :root {
-
   --color-primary: #e8b800;
-  --color-primary-dark: #c99d00;
+
+  /* Dourado usado em textos - contraste acessível */
+  --color-primary-dark: #8a6500;
 
   --color-dark: #202124;
   --color-text: #505256;
-  --color-muted: #76797e;
+
+  /* Cinza secundário mais escuro para textos pequenos */
+  --color-muted: #686b70;
 
   --color-bg: #ffffff;
   --color-bg-soft: #f6f6f4;
@@ -195,11 +198,11 @@ h3 {
   gap: 10px;
 
   color: #fff;
-  background: #25d366;
+  background: #18864b;
 }
 
 .btn-header:hover {
-  background: #1ebe5d;
+  background: #137a3d;
 }
 
 
@@ -2751,13 +2754,13 @@ h3 {
   gap: 7px;
   font-size: 0.74rem;
 
-  color: #fff;
-  background: #25d366;
+   color: #fff;
+  background: #18864b;
 }
 
   .btn-header:hover {
-    background: #1ebe5d;
-  }
+  background: #137a3d;
+}
 
 
   /* HERO MOBILE */
