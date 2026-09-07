@@ -161,7 +161,23 @@
   }
   </script>
 
+  <!-- Preload da imagem principal do Hero -->
 
+<link
+  rel="preload"
+  as="image"
+  type="image/webp"
+  href="img/hero/IMG_hero-produtos-800.webp"
+  imagesrcset="
+    img/hero/IMG_hero-produtos-800.webp 800w,
+    img/hero/IMG_hero-produtos.webp 1200w
+  "
+  imagesizes="
+    (max-width: 760px) 100vw,
+    610px
+  "
+  fetchpriority="high"
+>
   <link
     rel="stylesheet"
     href="css/style.css"
@@ -294,6 +310,7 @@
   class="hero-image"
   width="1200"
   height="905"
+  loading="eager"
   fetchpriority="high"
 >
 
