@@ -698,6 +698,12 @@ h3 {
   box-shadow: var(--shadow-soft);
 }
 
+/* AJUSTE ESPECÍFICO - CARD CRISTOS */
+
+.product-card-cristos .product-image img {
+  object-position: center 58%;
+}
+
 .product-image-placeholder {
   height: 245px;
 
@@ -2925,6 +2931,10 @@ h3 {
 
 .section-cta {
   margin-top: 36px;
+}
+
+.product-card-cristos .product-image img {
+  object-position: center 62%;
 }
 
 
