@@ -1,50 +1,51 @@
 document.addEventListener("DOMContentLoaded", () => {
 
   /* =========================================
-   TRACKING DOS CTAs DE WHATSAPP
-========================================= */
+     TRACKING DOS CTAs DE WHATSAPP
+  ========================================= */
 
-const ctas =
-  document.querySelectorAll("[data-cta]");
+  const ctas =
+    document.querySelectorAll("[data-cta]");
 
-ctas.forEach((cta) => {
+  ctas.forEach((cta) => {
 
-  cta.addEventListener("click", () => {
+    cta.addEventListener("click", () => {
 
-    const origem =
-      cta.dataset.cta || "nao-identificado";
+      const origem =
+        cta.dataset.cta || "nao-identificado";
 
-    const texto =
-      cta.textContent
-        .trim()
-        .replace(/\s+/g, " ");
+      const texto =
+        cta.textContent
+          .trim()
+          .replace(/\s+/g, " ");
 
-    console.log(
-      `CTA WhatsApp: ${origem}`
-    );
+      console.log(
+        `CTA WhatsApp: ${origem}`
+      );
 
-    if (typeof gtag === "function") {
+      if (typeof gtag === "function") {
 
-      gtag('event', 'whatsapp_click', {
-  cta_origin: ctaOrigin,
-  landing_page: 'b2c_consumidor'
+        gtag('event', 'whatsapp_click', {
 
-        cta_origin:
-          origem,
+          cta_origin:
+            origem,
 
-        cta_text:
-          texto,
+          cta_text:
+            texto,
 
-        page_path:
-          window.location.pathname
+          landing_page:
+            'b2c_consumidor',
 
-      });
+          page_path:
+            window.location.pathname
 
-    }
+        });
+
+      }
+
+    });
 
   });
-
-});
 
   /* =========================================
    WHATSAPP STICKY MOBILE
