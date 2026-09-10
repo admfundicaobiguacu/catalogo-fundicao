@@ -25,10 +25,9 @@ ctas.forEach((cta) => {
 
     if (typeof gtag === "function") {
 
-      gtag("event", "whatsapp_click", {
-
-        landing_page:
-          "b2b_revendedores",
+      gtag('event', 'whatsapp_click', {
+  cta_origin: ctaOrigin,
+  landing_page: 'b2c_consumidor'
 
         cta_origin:
           origem,
