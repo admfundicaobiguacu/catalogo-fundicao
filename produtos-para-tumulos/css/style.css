@@ -359,6 +359,32 @@ h3 {
   color: var(--color-primary-dark);
 }
 
+.hero-deadline {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+
+  margin-top: 20px;
+  padding: 14px 18px;
+
+  border-left: 4px solid var(--yellow);
+  background: #fff8df;
+
+  max-width: 520px;
+}
+
+.hero-deadline strong {
+  font-size: 15px;
+  font-weight: 700;
+  color: #222;
+}
+
+.hero-deadline span {
+  font-size: 14px;
+  line-height: 1.5;
+  color: #555;
+}
+
 
 
 /* =========================================
@@ -2720,6 +2746,13 @@ h3 {
     padding-bottom: 72px;
   }
 
+  .hero-deadline {
+    width: 100%;
+    max-width: none;
+    text-align: left;
+  }
+  
+
 
   /* BASE */
 
@@ -3359,6 +3392,42 @@ h3 {
   padding:
     0 12px
     18px 0;
+}
+
+/* =========================================
+   FAQ - DUAS COLUNAS
+========================================= */
+
+.faq-intro-center {
+  max-width: 760px;
+  margin: 0 auto 48px;
+  text-align: center;
+}
+
+.faq-columns {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 32px;
+  align-items: start;
+}
+
+.faq-columns .faq-list {
+  width: 100%;
+}
+
+
+@media (max-width: 760px) {
+
+  .faq-columns {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+
+  .faq-intro-center {
+    text-align: left;
+    margin-bottom: 32px;
+  }
+
 }
 
   /* WHATSAPP FIXO */
