@@ -4189,3 +4189,119 @@ footer {
   }
 
 }
+
+/* =========================================
+   DESTAQUE - LETRAS DE METAL
+========================================= */
+
+.featured-product-section-letters {
+  padding-top: 76px;
+  padding-bottom: 76px;
+}
+
+
+/* GRID */
+
+.featured-product-section-letters .letters-featured-grid {
+  display: grid;
+
+  grid-template-columns:
+    minmax(0, 0.9fr)
+    minmax(0, 1.1fr);
+
+  align-items: center;
+
+  gap: 64px;
+}
+
+
+/* TEXTO */
+
+.featured-product-section-letters .letters-featured-content {
+  max-width: 520px;
+}
+
+.featured-product-section-letters .letters-featured-content h2 {
+  margin-bottom: 22px;
+
+  font-size: clamp(
+    2.25rem,
+    3vw,
+    3.15rem
+  );
+}
+
+.featured-product-section-letters .letters-featured-content p {
+  margin-bottom: 14px;
+
+  font-size: 0.96rem;
+
+  line-height: 1.7;
+}
+
+.featured-product-section-letters .letters-featured-content .btn {
+  margin-top: 16px;
+}
+
+
+/* IMAGEM */
+
+.featured-product-section-letters .letters-featured-visual {
+  width: 100%;
+}
+
+.featured-product-section-letters .letters-featured-image {
+  width: 100%;
+  min-height: 0;
+
+  aspect-ratio: 16 / 9;
+
+  overflow: hidden;
+
+  border:
+    1px solid var(--color-border);
+
+  border-radius:
+    var(--radius-lg);
+
+  background:
+    var(--color-bg-soft);
+}
+
+.featured-product-section-letters .letters-featured-image img {
+  display: block;
+
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+  object-position: center;
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 760px) {
+
+  .featured-product-section-letters {
+    padding-top: 56px;
+    padding-bottom: 56px;
+  }
+
+  .featured-product-section-letters .letters-featured-grid {
+    grid-template-columns: 1fr;
+
+    gap: 30px;
+  }
+
+  .featured-product-section-letters .letters-featured-content {
+    max-width: none;
+  }
+
+  .featured-product-section-letters .letters-featured-content .btn {
+    width: 100%;
+  }
+
+}
