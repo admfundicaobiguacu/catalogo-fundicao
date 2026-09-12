@@ -383,13 +383,8 @@ h3 {
 ========================================= */
 
 .hero-visual {
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
-
-  width: 100%;
-
-  position: relative;
+  align-self: center;
+  transform: translateY(-55px);
 }
 
 .hero-image {
@@ -2189,6 +2184,9 @@ h3 {
 
 
 @media (max-width: 760px) {
+  .hero-break {
+    display: none;
+  }
 
   .history-visual {
     max-width: 100%;
@@ -2906,14 +2904,8 @@ h3 {
 }
 
 .hero-visual {
-  min-height: 0;
-
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  width: 100%;
-}
+    transform: none;
+  }
 
 .hero-image {
   display: block;
