@@ -627,24 +627,59 @@ h3 {
 
 
 /* =========================================
-   CHALLENGES
+   ORIENTAÇÃO / DESAFIOS
 ========================================= */
 
 .section-challenges {
+  padding-top: 82px;
+  padding-bottom: 78px;
+
   background: #fff;
 }
+
+
+/* CABEÇALHO */
+
+.section-challenges .section-heading-center {
+  max-width: 960px;
+
+  margin-bottom: 42px;
+}
+
+.section-challenges .section-heading-center h2 {
+  max-width: 900px;
+
+  margin-left: auto;
+  margin-right: auto;
+
+  font-size: clamp(
+    2.2rem,
+    2.8vw,
+    3rem
+  );
+}
+
+.section-challenges .section-heading-center p {
+  max-width: 780px;
+
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+/* CARDS */
 
 .challenge-grid {
   display: grid;
 
   grid-template-columns:
-    repeat(3, 1fr);
+    repeat(3, minmax(0, 1fr));
 
-  gap: 22px;
+  gap: 18px;
 }
 
 .info-card {
-  padding: 42px 36px;
+  padding: 30px 28px;
 
   border:
     1px solid var(--color-border);
@@ -665,42 +700,49 @@ h3 {
 }
 
 .card-icon {
-  width: 46px;
-  height: 46px;
+  width: 42px;
+  height: 42px;
 
   display: flex;
 
   align-items: center;
   justify-content: center;
 
-  margin-bottom: 30px;
+  margin-bottom: 22px;
 
   border-radius: 50%;
 
   color: #262626;
   background: var(--color-primary);
 
-  font-size: 0.75rem;
+  font-size: 0.72rem;
   font-weight: 900;
 }
 
 .info-card h3 {
-  margin-bottom: 16px;
+  margin-bottom: 12px;
+
+  font-size: 1.18rem;
 }
 
 .info-card p {
   color: var(--color-text);
 
-  line-height: 1.7;
+  font-size: 0.92rem;
+  line-height: 1.6;
 }
 
+
+/* FRASE FINAL */
+
 .section-closing {
-  margin-top: 48px;
+  margin-top: 34px;
 
   text-align: center;
 
   color: var(--color-dark);
 
+  font-size: 0.92rem;
   font-weight: 700;
 }
 
