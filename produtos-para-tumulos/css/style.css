@@ -746,6 +746,84 @@ h3 {
   font-weight: 700;
 }
 
+/* =========================================
+   SEGURANÇA / FURTOS
+========================================= */
+
+#seguranca {
+  padding-top: 64px;
+  padding-bottom: 60px;
+}
+
+
+/* CABEÇALHO */
+
+#seguranca .section-heading-center {
+  max-width: 900px;
+
+  margin-bottom: 34px;
+}
+
+#seguranca .section-heading-center h2 {
+  max-width: 860px;
+
+  margin-left: auto;
+  margin-right: auto;
+
+  font-size: clamp(
+    2.1rem,
+    2.6vw,
+    2.8rem
+  );
+}
+
+#seguranca .section-heading-center p {
+  max-width: 760px;
+
+  margin-left: auto;
+  margin-right: auto;
+
+  font-size: 0.96rem;
+  line-height: 1.65;
+}
+
+
+/* CARDS */
+
+#seguranca .challenge-grid {
+  gap: 16px;
+}
+
+#seguranca .info-card {
+  padding: 26px 26px;
+}
+
+#seguranca .card-icon {
+  width: 40px;
+  height: 40px;
+
+  margin-bottom: 18px;
+}
+
+#seguranca .info-card h3 {
+  margin-bottom: 10px;
+}
+
+#seguranca .info-card p {
+  font-size: 0.9rem;
+  line-height: 1.55;
+}
+
+
+/* OBSERVAÇÃO FINAL */
+
+#seguranca .section-closing {
+  margin-top: 26px;
+
+  font-size: 0.88rem;
+}
+
+
 
 /* =========================================
    PRODUTOS
