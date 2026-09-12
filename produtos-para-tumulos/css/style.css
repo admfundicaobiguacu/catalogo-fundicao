@@ -4833,3 +4833,152 @@ footer {
   }
 
 }
+
+/* =========================================
+   ENVIO E PAGAMENTO - AJUSTE FINAL B2C
+========================================= */
+
+#envio-pagamento {
+  padding-top: 68px;
+  padding-bottom: 68px;
+}
+
+
+/* CABEÇALHO */
+
+#envio-pagamento .logistics-heading {
+  max-width: 820px;
+
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 38px;
+
+  text-align: center;
+}
+
+#envio-pagamento .logistics-heading h2 {
+  max-width: 760px;
+
+  margin-left: auto;
+  margin-right: auto;
+
+  font-size: clamp(
+    2.35rem,
+    3vw,
+    3.15rem
+  );
+}
+
+#envio-pagamento .logistics-heading p {
+  max-width: 650px;
+
+  margin-left: auto;
+  margin-right: auto;
+
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+
+/* DOIS CARDS */
+
+#envio-pagamento .logistics-grid {
+  max-width: 1000px;
+
+  margin-left: auto;
+  margin-right: auto;
+
+  gap: 18px;
+
+  align-items: stretch;
+}
+
+#envio-pagamento .logistics-card {
+  padding: 30px 32px;
+}
+
+
+/* CABEÇALHO DO CARD */
+
+#envio-pagamento .logistics-card-top {
+  gap: 16px;
+
+  margin-bottom: 24px;
+  padding-bottom: 24px;
+}
+
+#envio-pagamento .logistics-icon {
+  width: 46px;
+  height: 46px;
+
+  flex: 0 0 46px;
+}
+
+#envio-pagamento .logistics-card h3 {
+  margin-top: 5px;
+
+  font-size: 1.12rem;
+}
+
+
+/* OPÇÕES */
+
+#envio-pagamento .logistics-options {
+  gap: 18px;
+}
+
+#envio-pagamento .logistics-option {
+  gap: 14px;
+}
+
+#envio-pagamento .logistics-check {
+  width: 28px;
+  height: 28px;
+
+  flex: 0 0 28px;
+}
+
+#envio-pagamento .logistics-option strong {
+  font-size: 0.9rem;
+}
+
+#envio-pagamento .logistics-option div > span {
+  margin-top: 3px;
+
+  font-size: 0.8rem;
+  line-height: 1.5;
+}
+
+
+/* MOBILE */
+
+@media (max-width: 760px) {
+
+  #envio-pagamento {
+    padding-top: 56px;
+    padding-bottom: 56px;
+  }
+
+  #envio-pagamento .logistics-heading {
+    margin-bottom: 32px;
+
+    text-align: left;
+  }
+
+  #envio-pagamento .logistics-heading h2,
+  #envio-pagamento .logistics-heading p {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  #envio-pagamento .logistics-grid {
+    grid-template-columns: 1fr;
+
+    gap: 16px;
+  }
+
+  #envio-pagamento .logistics-card {
+    padding: 26px 24px;
+  }
+
+}
