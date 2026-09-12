@@ -5312,12 +5312,28 @@ footer {
 #contato .final-cta-note {
   margin-top: 14px;
 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+
   font-size: 0.76rem;
   line-height: 1.5;
-
   text-align: center;
 }
 
+#contato .final-cta-note-line {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+#contato .final-cta-dot {
+  color: var(--color-primary);
+  font-weight: 700;
+}
 
 /* MOBILE */
 
