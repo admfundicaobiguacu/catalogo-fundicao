@@ -164,3 +164,45 @@ if (mobileWhatsapp && hero && footer) {
   });
 
 });
+
+/* =========================================
+   COMPARADOR ANTES / DEPOIS
+========================================= */
+
+document.querySelectorAll('.before-after').forEach((comparison) => {
+
+  const range =
+    comparison.querySelector('.before-after-range');
+
+  const before =
+    comparison.querySelector('.before-after-before');
+
+  const divider =
+    comparison.querySelector('.before-after-divider');
+
+
+  if (!range || !before || !divider) {
+    return;
+  }
+
+
+  const updateComparison = () => {
+
+    const value = range.value;
+
+    before.style.width = `${value}%`;
+
+    divider.style.left = `${value}%`;
+
+  };
+
+
+  range.addEventListener(
+    'input',
+    updateComparison
+  );
+
+
+  updateComparison();
+
+});
