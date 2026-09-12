@@ -5079,3 +5079,139 @@ footer {
   }
 
 }
+
+/* =========================================
+   FAQ - AJUSTE FINAL B2C
+========================================= */
+
+#duvidas {
+  padding-top: 64px;
+  padding-bottom: 64px;
+}
+
+
+/* CABEÇALHO */
+
+#duvidas .faq-intro.faq-intro-center {
+  max-width: 780px;
+
+  margin: 0 auto 38px;
+
+  text-align: center;
+}
+
+#duvidas .faq-intro h2 {
+  max-width: 760px;
+
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 16px;
+
+  font-size: clamp(
+    2.35rem,
+    3vw,
+    3.15rem
+  );
+}
+
+#duvidas .faq-intro p {
+  max-width: 680px;
+
+  margin-left: auto;
+  margin-right: auto;
+
+  font-size: 0.92rem;
+  line-height: 1.6;
+}
+
+
+/* DUAS COLUNAS */
+
+#duvidas .faq-columns {
+  gap: 40px;
+}
+
+
+/* PERGUNTAS */
+
+#duvidas .faq-question {
+  min-height: 0;
+
+  padding: 19px 0;
+
+  gap: 18px;
+
+  font-size: 0.92rem;
+  line-height: 1.4;
+}
+
+
+/* BOTÃO + */
+
+#duvidas .faq-icon {
+  width: 30px;
+  height: 30px;
+
+  flex: 0 0 30px;
+
+  font-size: 1rem;
+}
+
+
+/* RESPOSTAS */
+
+#duvidas .faq-answer-inner {
+  padding-bottom: 20px;
+  padding-right: 46px;
+}
+
+#duvidas .faq-answer-inner p {
+  margin-bottom: 10px;
+
+  font-size: 0.86rem;
+  line-height: 1.6;
+}
+
+#duvidas .faq-answer-inner p:last-child {
+  margin-bottom: 0;
+}
+
+
+/* MOBILE */
+
+@media (max-width: 760px) {
+
+  #duvidas {
+    padding-top: 56px;
+    padding-bottom: 56px;
+  }
+
+  #duvidas .faq-intro.faq-intro-center {
+    margin-bottom: 30px;
+
+    text-align: left;
+  }
+
+  #duvidas .faq-intro h2,
+  #duvidas .faq-intro p {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  #duvidas .faq-columns {
+    grid-template-columns: 1fr;
+
+    gap: 0;
+  }
+
+  #duvidas .faq-question {
+    padding: 17px 0;
+
+    font-size: 0.9rem;
+  }
+
+  #duvidas .faq-answer-inner {
+    padding-right: 36px;
+  }
+
+}
