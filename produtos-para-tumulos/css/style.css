@@ -4982,3 +4982,100 @@ footer {
   }
 
 }
+
+/* =========================================
+   HISTÓRIA / 36 ANOS - AJUSTE FINAL B2C
+========================================= */
+
+#historia {
+  padding-top: 64px;
+  padding-bottom: 64px;
+}
+
+
+/* GRID */
+
+#historia .history-grid {
+  align-items: center;
+
+  gap: 72px;
+}
+
+
+/* 36 ANOS */
+
+#historia .history-number-block {
+  margin-bottom: 28px;
+}
+
+
+/* TÍTULO */
+
+#historia .history-content h2 {
+  margin-bottom: 22px;
+}
+
+
+/* TEXTOS */
+
+#historia .history-content > p {
+  margin-bottom: 13px;
+
+  line-height: 1.65;
+}
+
+
+/* PROVAS DE CONFIANÇA */
+
+#historia .history-trust {
+  margin-top: 26px;
+
+  gap: 14px;
+}
+
+#historia .history-trust-item {
+  gap: 12px;
+}
+
+#historia .history-trust-item strong {
+  margin-bottom: 2px;
+}
+
+
+/* ASSINATURA */
+
+#historia .history-signature {
+  margin-top: 26px;
+}
+
+
+/* IMAGEM */
+
+#historia .history-visual {
+  width: 100%;
+  max-width: 400px;
+
+  justify-self: end;
+}
+
+
+/* MOBILE */
+
+@media (max-width: 760px) {
+
+  #historia {
+    padding-top: 56px;
+    padding-bottom: 56px;
+  }
+
+  #historia .history-grid {
+    gap: 34px;
+  }
+
+  #historia .history-visual {
+    max-width: 100%;
+
+    justify-self: center;
+  }
+
+}
