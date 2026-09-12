@@ -1926,9 +1926,14 @@ h3 {
 
 .history-grid {
   display: grid;
-  grid-template-columns: minmax(0, 1fr) minmax(560px, 640px);
-  gap: 72px;
+
+  grid-template-columns:
+    minmax(0, 1fr)
+    380px;
+
   align-items: center;
+
+  gap: 80px;
 }
 
 
@@ -2065,115 +2070,34 @@ h3 {
 
 .history-visual {
   width: 100%;
-  max-width: 640px;
+  max-width: 380px;
 
   justify-self: end;
-
-  padding-bottom: 0;
 }
 
+.history-photo-evolution {
+  width: 100%;
 
-/* =========================================
-   ANOS SOBRE A IMAGEM
-========================================= */
+  margin: 0;
 
-.history-year-tag {
-  position: absolute;
+  overflow: hidden;
 
-  left: 16px;
+  border:
+    1px solid rgba(255, 255, 255, 0.1);
 
-  z-index: 2;
+  border-radius:
+    var(--radius-lg);
 
-  min-width: 68px;
-
-  padding: 8px 14px;
-
-  border-radius: 8px;
-
-  color: #202124;
-  background: var(--color-primary);
-
-  font-size: 0.78rem;
-  font-weight: 900;
-
-  letter-spacing: 0.06em;
-
-  text-align: center;
-
-  box-shadow:
-    0 8px 22px rgba(0, 0, 0, 0.18);
+  background: #111;
 }
 
-
-/* Cada badge fica próximo ao início de sua respectiva foto */
-
-.history-year-1990 {
-  top: 2.5%;
-}
-
-.history-year-1996 {
-  top: 35.8%;
-}
-
-.history-year-2026 {
-  top: 69.1%;
-}
-
-
-/* =========================================
-   BADGE PRINCIPAL
-========================================= */
-
-.history-badge {
-  position: static;
-
-  width: fit-content;
-
-  margin-top: 18px;
-
-  display: inline-flex;
-  flex-direction: column;
-  align-items: flex-start;
-
-  gap: 6px;
-
-  padding: 22px 28px;
-
-  border-radius: 18px;
-
-  color: #202124;
-  background: var(--color-primary);
-
-  box-shadow:
-    0 18px 40px rgba(0, 0, 0, 0.18);
-}
-
-.history-badge strong {
+.history-photo-evolution img {
   display: block;
 
-  color: #202124;
-
-  font-size: 2rem;
-  font-weight: 900;
-
-  line-height: 1;
+  width: 100%;
+  height: auto;
 }
 
-.history-badge span {
-  display: block;
-
-  margin-top: 0;
-
-  color:
-    rgba(32, 33, 36, 0.75);
-
-  font-size: 0.72rem;
-  font-weight: 900;
-
-  line-height: 1.4;
-
-  letter-spacing: 0.08em;
-}
 
 
 /* =========================================
@@ -2252,7 +2176,8 @@ h3 {
   }
 
   .history-visual {
-    max-width: 640px;
+    width: 100%;
+    max-width: 420px;
 
     justify-self: center;
   }
@@ -2263,9 +2188,11 @@ h3 {
 @media (max-width: 760px) {
 
   .history-visual {
-    width: 100%;
     max-width: 100%;
   }
+
+}
+
 
   .history-photo-evolution {
     height: auto;
@@ -2279,27 +2206,8 @@ h3 {
     object-fit: contain;
   }
 
-  .history-year-tag {
-    left: 12px;
-
-    min-width: 58px;
-
-    padding: 6px 10px;
-
-    font-size: 0.66rem;
-  }
-
-  .history-badge {
-    width: 100%;
-
-    padding: 18px 20px;
-  }
-
-  .history-badge strong {
-    font-size: 1.6rem;
-  }
-
-}
+  
+  
 /* =========================================
    DÚVIDAS FREQUENTES
 ========================================= */
