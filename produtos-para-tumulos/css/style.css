@@ -4305,3 +4305,115 @@ footer {
   }
 
 }
+
+/* =========================================
+   PRONTA ENTREGA - AJUSTE FINAL B2C
+========================================= */
+
+#pronta-entrega {
+  padding-top: 72px;
+  padding-bottom: 72px;
+}
+
+
+/* GRID PRINCIPAL */
+
+#pronta-entrega .stock-grid {
+  grid-template-columns:
+    minmax(0, 0.82fr)
+    minmax(0, 1.18fr);
+
+  align-items: center;
+
+  gap: 56px;
+}
+
+
+/* TEXTO */
+
+#pronta-entrega .stock-content {
+  max-width: 500px;
+}
+
+#pronta-entrega .stock-content h2 {
+  margin-bottom: 22px;
+
+  font-size: clamp(
+    2.35rem,
+    3vw,
+    3.15rem
+  );
+}
+
+#pronta-entrega .stock-content > p {
+  margin-bottom: 14px;
+
+  font-size: 0.95rem;
+  line-height: 1.65;
+}
+
+#pronta-entrega .stock-note {
+  margin-top: 18px;
+
+  font-size: 0.86rem;
+  line-height: 1.6;
+}
+
+#pronta-entrega .stock-content .btn {
+  margin-top: 24px;
+}
+
+
+/* LISTA DE PRODUTOS */
+
+#pronta-entrega .stock-list {
+  gap: 12px;
+}
+
+#pronta-entrega .stock-item {
+  min-height: 70px;
+
+  gap: 14px;
+
+  padding: 14px 18px;
+}
+
+#pronta-entrega .stock-check {
+  width: 32px;
+  height: 32px;
+
+  flex: 0 0 32px;
+}
+
+#pronta-entrega .stock-item strong {
+  font-size: 0.92rem;
+}
+
+#pronta-entrega .stock-item div > span {
+  margin-top: 3px;
+
+  font-size: 0.76rem;
+  line-height: 1.4;
+}
+
+
+/* MOBILE */
+
+@media (max-width: 760px) {
+
+  #pronta-entrega {
+    padding-top: 56px;
+    padding-bottom: 56px;
+  }
+
+  #pronta-entrega .stock-grid {
+    grid-template-columns: 1fr;
+
+    gap: 32px;
+  }
+
+  #pronta-entrega .stock-content {
+    max-width: none;
+  }
+
+}
