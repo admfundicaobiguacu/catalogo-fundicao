@@ -5160,9 +5160,31 @@ footer {
 
 /* RESPOSTAS */
 
+#duvidas .faq-answer {
+  display: grid;
+
+  grid-template-rows: 0fr;
+
+  overflow: hidden;
+
+  transition:
+    grid-template-rows 0.3s ease;
+}
+
 #duvidas .faq-answer-inner {
+  min-height: 0;
+
+  overflow: hidden;
+
+  padding: 0 46px 0 0;
+}
+
+#duvidas .faq-item.is-open .faq-answer {
+  grid-template-rows: 1fr;
+}
+
+#duvidas .faq-item.is-open .faq-answer-inner {
   padding-bottom: 20px;
-  padding-right: 46px;
 }
 
 #duvidas .faq-answer-inner p {
@@ -5211,7 +5233,11 @@ footer {
   }
 
   #duvidas .faq-answer-inner {
-    padding-right: 36px;
-  }
+  padding-right: 36px;
+}
+
+#duvidas .faq-item.is-open .faq-answer-inner {
+  padding-bottom: 18px;
+}
 
 }
