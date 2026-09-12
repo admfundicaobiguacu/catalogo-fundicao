@@ -335,23 +335,37 @@ h3 {
   grid-column: 1;
   grid-row: 1;
 }
-
 .hero-description {
   max-width: 610px;
-
   margin-top: 22px;
 }
 
 .hero-deadline {
-  margin-top: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+
+  max-width: 520px;
+
+  margin-top: 20px;
+  padding: 14px 18px;
+
+  border-left: 4px solid var(--color-primary);
+  background: #fff8df;
 }
 
-.hero-actions {
-  margin-top: 26px;
+.hero-deadline strong {
+  color: #222;
+
+  font-size: 15px;
+  font-weight: 700;
 }
 
-.hero-microcopy {
-  margin-top: 11px;
+.hero-deadline span {
+  color: #555;
+
+  font-size: 14px;
+  line-height: 1.5;
 }
 
 .hero-actions {
@@ -371,33 +385,6 @@ h3 {
 
   color: var(--color-primary-dark);
 }
-
-.hero-deadline {
-  display: flex;
-  flex-direction: column;
-  gap: 4px;
-
-  margin-top: 20px;
-  padding: 14px 18px;
-
-  border-left: 4px solid var(--color-primary);
-  background: #fff8df;
-
-  max-width: 520px;
-}
-
-.hero-deadline strong {
-  font-size: 15px;
-  font-weight: 700;
-  color: #222;
-}
-
-.hero-deadline span {
-  font-size: 14px;
-  line-height: 1.5;
-  color: #555;
-}
-
 
 
 /* =========================================
