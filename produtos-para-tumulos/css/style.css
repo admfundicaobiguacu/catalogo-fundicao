@@ -1478,6 +1478,9 @@ h3 {
 ========================================= */
 
 .production-section {
+  padding-top: 82px;
+  padding-bottom: 82px;
+
   background: #fff;
 }
 
@@ -1490,9 +1493,8 @@ h3 {
 
   align-items: center;
 
-  gap: 85px;
+  gap: 64px;
 }
-
 
 /* GALERIA */
 
@@ -1574,28 +1576,28 @@ h3 {
 }
 
 .production-content h2 {
-  margin-bottom: 26px;
+  margin-bottom: 22px;
 }
 
 .production-content > p {
-  margin-bottom: 18px;
+  margin-bottom: 14px;
 
   font-size: 1rem;
 
-  line-height: 1.75;
+  line-height: 1.7;
 }
 
 
 /* DIFERENCIAIS */
 
 .production-points {
-  margin-top: 34px;
+  margin-top: 26px;
 
   display: flex;
 
   flex-direction: column;
 
-  gap: 18px;
+  gap: 14px;
 }
 
 .production-point {
