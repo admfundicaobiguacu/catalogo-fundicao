@@ -1929,7 +1929,7 @@ h3 {
 
   grid-template-columns:
     minmax(0, 1fr)
-    380px;
+    400px;
 
   align-items: center;
 
@@ -2070,7 +2070,7 @@ h3 {
 
 .history-visual {
   width: 100%;
-  max-width: 380px;
+  max-width: 400px;
 
   justify-self: end;
 }
