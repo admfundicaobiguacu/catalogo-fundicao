@@ -5241,3 +5241,111 @@ footer {
 }
 
 }
+
+/* =========================================
+   CTA FINAL - AJUSTE FINAL B2C
+========================================= */
+
+#contato {
+  padding-top: 64px;
+  padding-bottom: 64px;
+}
+
+
+/* GRID */
+
+#contato .final-cta-box {
+  grid-template-columns:
+    minmax(0, 1.15fr)
+    minmax(320px, 0.85fr);
+
+  align-items: center;
+
+  gap: 64px;
+}
+
+
+/* TEXTO */
+
+#contato .final-cta-copy {
+  max-width: 720px;
+}
+
+#contato .final-cta-copy h2 {
+  max-width: 700px;
+
+  margin-bottom: 20px;
+
+  font-size: clamp(
+    2.45rem,
+    3.1vw,
+    3.3rem
+  );
+}
+
+#contato .final-cta-copy p {
+  max-width: 680px;
+
+  font-size: 0.95rem;
+  line-height: 1.65;
+}
+
+
+/* AÇÃO */
+
+#contato .final-cta-action {
+  width: 100%;
+  max-width: 380px;
+
+  justify-self: end;
+
+  text-align: center;
+}
+
+#contato .final-cta-button {
+  width: 100%;
+}
+
+
+/* TEXTO ABAIXO DO BOTÃO */
+
+#contato .final-cta-note {
+  margin-top: 14px;
+
+  font-size: 0.76rem;
+  line-height: 1.5;
+
+  text-align: center;
+}
+
+
+/* MOBILE */
+
+@media (max-width: 760px) {
+
+  #contato {
+    padding-top: 56px;
+    padding-bottom: 56px;
+  }
+
+  #contato .final-cta-box {
+    grid-template-columns: 1fr;
+
+    gap: 30px;
+  }
+
+  #contato .final-cta-copy {
+    max-width: none;
+  }
+
+  #contato .final-cta-action {
+    max-width: none;
+
+    justify-self: stretch;
+  }
+
+  #contato .final-cta-button {
+    width: 100%;
+  }
+
+}
