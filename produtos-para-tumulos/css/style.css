@@ -2361,17 +2361,6 @@ h3 {
   background: #fff;
 }
 
-.faq-grid {
-  display: grid;
-
-  grid-template-columns:
-    minmax(0, 0.75fr)
-    minmax(0, 1.25fr);
-
-  align-items: start;
-
-  gap: 100px;
-}
 
 
 /* INTRODUÇÃO */
@@ -2924,11 +2913,6 @@ h3 {
 
   .history-grid {
     gap: 50px;
-  }
-
-    
-  .faq-grid {
-    gap: 55px;
   }
 
 }
@@ -3529,19 +3513,9 @@ h3 {
   max-width: none;
 }
 
-.history-visual {
-  padding-bottom: 36px;
-}
-
 
 
   /* DÚVIDAS FREQUENTES */
-
-.faq-grid {
-  grid-template-columns: 1fr;
-
-  gap: 34px;
-}
 
 .faq-intro {
   max-width: none;
