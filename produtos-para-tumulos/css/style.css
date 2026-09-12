@@ -511,15 +511,15 @@ h3 {
 }
 
 .hero-content h1 {
-  max-width: 650px;
+  max-width: 700px;
 
   font-size: clamp(
-    3rem,
-    3.8vw,
-    3.9rem
+    2.9rem,
+    3.45vw,
+    3.55rem
   );
 
-  line-height: 1.05;
+  line-height: 1.06;
 }
 
 
