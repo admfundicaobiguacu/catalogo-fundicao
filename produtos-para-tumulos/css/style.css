@@ -2926,10 +2926,7 @@ h3 {
     gap: 50px;
   }
 
-    .history-badge {
-    left: -20px;
-  }
-
+    
   .faq-grid {
     gap: 55px;
   }
@@ -3536,15 +3533,7 @@ h3 {
   padding-bottom: 36px;
 }
 
-.history-badge {
-  left: 18px;
-  bottom: 0;
 
-  min-width: 170px;
-
-  padding:
-    18px 20px;
-}
 
   /* DÚVIDAS FREQUENTES */
 
