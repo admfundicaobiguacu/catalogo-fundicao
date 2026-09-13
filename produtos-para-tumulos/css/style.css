@@ -5321,3 +5321,75 @@ footer {
   }
 
 }
+
+/* =========================================
+   WHATSAPP FIXO - AJUSTE FINAL MOBILE
+========================================= */
+
+@media (max-width: 760px) {
+
+  .mobile-whatsapp {
+    left: 50%;
+    right: auto;
+    bottom: 14px;
+
+    width: auto;
+    min-width: 220px;
+    min-height: 52px;
+
+    padding: 0 22px;
+
+    gap: 9px;
+
+    border-radius: 999px;
+
+    font-size: 0.82rem;
+
+    transform:
+      translate(-50%, 16px);
+  }
+
+  .mobile-whatsapp.is-visible {
+    transform:
+      translate(-50%, 0);
+  }
+
+}
+
+/* =========================================
+   PRODUTOS - AJUSTE FINAL MOBILE
+========================================= */
+
+@media (max-width: 760px) {
+
+  .products-section {
+    padding-top: 56px;
+    padding-bottom: 56px;
+  }
+
+  .products-section .section-heading {
+    margin-bottom: 32px;
+  }
+
+  .products-section .section-heading h2 {
+    font-size: 2rem;
+    line-height: 1.08;
+    letter-spacing: -0.025em;
+  }
+
+  .products-section .section-heading p {
+    margin-top: 20px;
+
+    font-size: 0.96rem;
+    line-height: 1.6;
+  }
+
+  .products-section .products-grid {
+    gap: 14px;
+  }
+
+  .products-section .product-content {
+    padding: 20px 20px 24px;
+  }
+
+}
