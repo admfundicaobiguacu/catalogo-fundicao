@@ -5535,3 +5535,69 @@ footer {
   }
 
 }
+
+/* =========================================
+   SEGURANÇA CONTRA FURTOS - AJUSTE MOBILE
+========================================= */
+
+@media (max-width: 760px) {
+
+  #seguranca {
+    padding-top: 48px;
+    padding-bottom: 52px;
+  }
+
+  #seguranca .section-heading-center {
+    margin-bottom: 30px;
+  }
+
+  #seguranca .section-heading-center h2 {
+    font-size: 2rem;
+    line-height: 1.08;
+    letter-spacing: -0.025em;
+  }
+
+  #seguranca .section-heading-center p {
+    margin-top: 20px;
+
+    font-size: 0.95rem;
+    line-height: 1.62;
+  }
+
+  #seguranca .challenge-grid {
+    gap: 14px;
+  }
+
+  #seguranca .info-card {
+    padding: 22px 20px;
+  }
+
+  #seguranca .card-icon {
+    width: 40px;
+    height: 40px;
+
+    margin-bottom: 14px;
+  }
+
+  #seguranca .info-card h3 {
+    margin-bottom: 8px;
+
+    font-size: 1.08rem;
+    line-height: 1.3;
+  }
+
+  #seguranca .info-card p {
+    font-size: 0.9rem;
+    line-height: 1.55;
+  }
+
+  #seguranca .section-closing {
+    max-width: 340px;
+
+    margin: 24px auto 0;
+
+    font-size: 0.88rem;
+    line-height: 1.45;
+  }
+
+}
