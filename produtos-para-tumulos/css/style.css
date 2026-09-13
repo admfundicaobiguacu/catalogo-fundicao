@@ -5601,3 +5601,49 @@ footer {
   }
 
 }
+
+/* =========================================
+   FOTOS E RESTAURAÇÃO - ORDEM FINAL MOBILE
+========================================= */
+
+@media (max-width: 760px) {
+
+  .photo-restoration-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .photo-restoration-content {
+    display: contents;
+  }
+
+  .photo-restoration-content .eyebrow {
+    order: 1;
+  }
+
+  .photo-restoration-content h2 {
+    order: 2;
+
+    margin-bottom: 24px;
+  }
+
+  .photo-restoration-visual {
+    order: 3;
+
+    width: 100%;
+    margin-bottom: 28px;
+  }
+
+  .photo-restoration-content > p {
+    order: 4;
+  }
+
+  .photo-restoration-content .btn {
+    order: 5;
+
+    width: 100%;
+    margin-top: 14px;
+  }
+
+}
