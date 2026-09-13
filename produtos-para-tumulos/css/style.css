@@ -5182,3 +5182,77 @@ footer {
   }
 
 }
+
+/* =========================================
+   HERO - AJUSTE FINAL MOBILE
+========================================= */
+
+@media (max-width: 760px) {
+
+  .hero-grid {
+    padding-top: 24px;
+  }
+
+  .hero-content h1 {
+    font-size: 2.55rem;
+    line-height: 1.06;
+    letter-spacing: -0.025em;
+  }
+
+  .hero-description {
+    margin-top: 16px;
+  }
+
+  .hero-microcopy {
+    max-width: 290px;
+
+    margin-left: auto;
+    margin-right: auto;
+
+    font-size: 0.88rem;
+  }
+
+}
+
+/* =========================================
+   PROVAS RÁPIDAS - AJUSTE FINAL MOBILE
+========================================= */
+
+@media (max-width: 760px) {
+
+  .quick-proof .proof-item {
+    min-height: 88px;
+
+    align-items: center;
+
+    gap: 14px;
+
+    padding: 20px 12px;
+
+    border-right: none;
+  }
+
+  .quick-proof .proof-number,
+  .quick-proof .proof-icon {
+    width: 48px;
+
+    margin-top: 0;
+
+    text-align: center;
+
+    flex: 0 0 48px;
+  }
+
+  .quick-proof .proof-item strong {
+    font-size: 0.94rem;
+    line-height: 1.3;
+  }
+
+  .quick-proof .proof-item span:last-child {
+    margin-top: 5px;
+
+    font-size: 0.78rem;
+    line-height: 1.4;
+  }
+
+}
