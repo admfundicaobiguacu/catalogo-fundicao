@@ -6294,3 +6294,346 @@ footer {
   }
 
 }
+
+/* =========================================
+   HISTÓRIA / DESDE 1990 - AJUSTE MOBILE
+========================================= */
+
+@media (max-width: 760px) {
+
+  #historia {
+    padding-top: 52px;
+    padding-bottom: 72px;
+  }
+
+  #historia .history-heading {
+    margin-bottom: 28px;
+    text-align: left;
+  }
+
+  #historia .history-heading .eyebrow {
+    margin-bottom: 18px;
+  }
+
+  #historia .history-top {
+    margin-bottom: 28px;
+  }
+
+  #historia .history-badge {
+    display: flex;
+    align-items: flex-end;
+    gap: 14px;
+  }
+
+  #historia .history-number {
+    font-size: 5.4rem;
+    line-height: 0.9;
+    letter-spacing: -0.04em;
+  }
+
+  #historia .history-badge-label {
+    font-size: 0.82rem;
+    line-height: 1.35;
+    letter-spacing: 0.12em;
+  }
+
+  #historia .history-heading h2 {
+    margin: 0 0 18px;
+    font-size: 2.5rem;
+    line-height: 1.08;
+    letter-spacing: -0.03em;
+  }
+
+  #historia .history-heading p {
+    margin: 0 0 18px;
+    font-size: 0.98rem;
+    line-height: 1.7;
+    color: rgba(255,255,255,0.78);
+  }
+
+  #historia .history-points {
+    margin-top: 26px;
+    gap: 18px;
+  }
+
+  #historia .history-point {
+    display: flex;
+    align-items: flex-start;
+    gap: 14px;
+  }
+
+  #historia .history-point-icon {
+    width: 54px;
+    height: 54px;
+    min-width: 54px;
+  }
+
+  #historia .history-point-title {
+    margin-bottom: 4px;
+    font-size: 1rem;
+    line-height: 1.35;
+  }
+
+  #historia .history-point-text {
+    font-size: 0.92rem;
+    line-height: 1.6;
+    color: rgba(255,255,255,0.72);
+  }
+
+  #historia .history-seal {
+    margin-top: 28px;
+    margin-bottom: 26px;
+    gap: 14px;
+  }
+
+  #historia .history-seal-line {
+    width: 42px;
+    min-width: 42px;
+  }
+
+  #historia .history-seal-text strong {
+    display: block;
+    margin-bottom: 4px;
+    font-size: 0.95rem;
+    line-height: 1.4;
+  }
+
+  #historia .history-seal-text span {
+    display: block;
+    font-size: 0.95rem;
+    line-height: 1.45;
+  }
+
+  #historia .history-timeline {
+    margin-top: 18px;
+    border-radius: 24px;
+    overflow: hidden;
+  }
+
+  #historia .history-timeline img {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+
+  #historia .history-timeline-item + .history-timeline-item {
+    margin-top: 0;
+  }
+
+  #historia .history-year {
+    font-size: 0.82rem;
+    padding: 6px 10px;
+  }
+
+}
+
+/* =========================================
+   FAQ - AJUSTE VISUAL MOBILE
+========================================= */
+
+@media (max-width: 760px) {
+
+  #duvidas {
+    padding-top: 48px;
+    padding-bottom: 52px;
+  }
+
+  #duvidas .faq-intro.faq-intro-center {
+    margin-bottom: 26px;
+
+    text-align: left;
+  }
+
+  #duvidas .faq-intro .eyebrow {
+    margin-bottom: 16px;
+  }
+
+  #duvidas .faq-intro h2 {
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 18px;
+
+    font-size: 2rem;
+    line-height: 1.08;
+    letter-spacing: -0.025em;
+  }
+
+  #duvidas .faq-intro p {
+    margin-left: 0;
+    margin-right: 0;
+
+    font-size: 0.94rem;
+    line-height: 1.6;
+  }
+
+  #duvidas .faq-columns {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+
+  #duvidas .faq-question {
+    min-height: 0;
+
+    gap: 14px;
+
+    padding: 15px 0;
+
+    font-size: 0.88rem;
+    line-height: 1.4;
+  }
+
+  #duvidas .faq-icon {
+    width: 28px;
+    height: 28px;
+
+    flex: 0 0 28px;
+
+    font-size: 0.95rem;
+  }
+
+  #duvidas .faq-answer-inner {
+    padding-right: 34px;
+  }
+
+  #duvidas .faq-item.is-open .faq-answer-inner {
+    padding-bottom: 16px;
+  }
+
+  #duvidas .faq-answer-inner p {
+    margin-bottom: 9px;
+
+    font-size: 0.84rem;
+    line-height: 1.6;
+  }
+
+}
+
+/* =========================================
+   CTA FINAL - AJUSTE VISUAL MOBILE
+========================================= */
+
+@media (max-width: 760px) {
+
+  #contato {
+    padding-top: 48px;
+    padding-bottom: 52px;
+  }
+
+  #contato .final-cta-box {
+    grid-template-columns: 1fr;
+    gap: 26px;
+  }
+
+  #contato .final-cta-copy {
+    max-width: none;
+  }
+
+  #contato .final-cta-copy .eyebrow {
+    margin-bottom: 16px;
+  }
+
+  #contato .final-cta-copy h2 {
+    margin-bottom: 18px;
+
+    font-size: 2rem;
+    line-height: 1.08;
+    letter-spacing: -0.025em;
+  }
+
+  #contato .final-cta-copy p {
+    font-size: 0.95rem;
+    line-height: 1.62;
+  }
+
+  #contato .final-cta-action {
+    max-width: none;
+
+    justify-self: stretch;
+  }
+
+  #contato .final-cta-button {
+    width: 100%;
+    min-height: 58px;
+  }
+
+  #contato .final-cta-note {
+    margin-top: 12px;
+
+    font-size: 0.74rem;
+    line-height: 1.45;
+  }
+
+}
+
+/* =========================================
+   FOOTER - CONTATO CENTRALIZADO NO MOBILE
+========================================= */
+
+@media (max-width: 760px) {
+
+  .footer-contact {
+    width: 100%;
+
+    margin-left: auto;
+    margin-right: auto;
+
+    text-align: center;
+  }
+
+}
+
+/* =========================================
+   WHATSAPP FLUTUANTE - VERSÃO FINAL MOBILE
+========================================= */
+
+@media (max-width: 760px) {
+
+  .mobile-whatsapp {
+    left: auto !important;
+    right: 16px !important;
+    bottom: 16px !important;
+
+    width: 56px !important;
+    min-width: 56px !important;
+    height: 56px;
+    min-height: 56px;
+
+    padding: 0 !important;
+
+    gap: 0;
+
+    border-radius: 50% !important;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    transform: translateY(16px) !important;
+  }
+
+  .mobile-whatsapp.is-visible {
+    transform: translateY(0) !important;
+  }
+
+  .mobile-whatsapp .icon-whatsapp {
+    width: 25px;
+    height: 25px;
+
+    flex: 0 0 25px;
+  }
+
+  .mobile-whatsapp span {
+    display: none;
+  }
+
+  .mobile-whatsapp.is-suppressed {
+    opacity: 0 !important;
+    visibility: hidden !important;
+
+    pointer-events: none;
+
+    transform: translateY(16px) !important;
+  }
+
+}
+

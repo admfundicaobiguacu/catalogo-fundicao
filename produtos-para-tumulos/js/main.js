@@ -206,3 +206,117 @@ document.querySelectorAll('.before-after').forEach((comparison) => {
   updateComparison();
 
 });
+
+/* =========================================
+   WHATSAPP FLUTUANTE
+   Oculta quando outro CTA está visível
+========================================= */
+
+document.addEventListener('DOMContentLoaded', function () {
+
+  const floatingWhatsApp =
+    document.querySelector('.mobile-whatsapp');
+
+  if (!floatingWhatsApp) {
+    return;
+  }
+
+  const mobileMedia =
+    window.matchMedia('(max-width: 760px)');
+
+  /*
+   * Estes CTAs não devem esconder
+   * o botão flutuante:
+   *
+   * header       = fica fixo no topo
+   * mobile-sticky = é o próprio botão
+   * footer       = será tratado pelo footer inteiro
+   */
+  const ignoredCtas =
+    new Set([
+      'header',
+      'mobile-sticky',
+      'footer'
+    ]);
+
+  const pageCtas =
+    Array.from(
+      document.querySelectorAll('a[data-cta]')
+    ).filter(function (element) {
+
+      return !ignoredCtas.has(
+        element.dataset.cta
+      );
+
+    });
+
+  const footer =
+    document.querySelector('.site-footer');
+
+  const targets =
+    footer
+      ? [...pageCtas, footer]
+      : pageCtas;
+
+  const visibleTargets =
+    new Set();
+
+  function updateFloatingWhatsApp() {
+
+    const shouldHide =
+      mobileMedia.matches &&
+      visibleTargets.size > 0;
+
+    floatingWhatsApp.classList.toggle(
+      'is-suppressed',
+      shouldHide
+    );
+
+  }
+
+  const observer =
+    new IntersectionObserver(
+      function (entries) {
+
+        entries.forEach(function (entry) {
+
+          if (entry.isIntersecting) {
+
+            visibleTargets.add(
+              entry.target
+            );
+
+          } else {
+
+            visibleTargets.delete(
+              entry.target
+            );
+
+          }
+
+        });
+
+        updateFloatingWhatsApp();
+
+      },
+      {
+        threshold: 0.15
+      }
+    );
+
+  targets.forEach(function (target) {
+
+    observer.observe(target);
+
+  });
+
+  if (mobileMedia.addEventListener) {
+
+    mobileMedia.addEventListener(
+      'change',
+      updateFloatingWhatsApp
+    );
+
+  }
+
+});
