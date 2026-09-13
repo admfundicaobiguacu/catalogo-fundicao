@@ -5691,3 +5691,49 @@ footer {
   }
 
 }
+
+/* =========================================
+   LETRAS DE METAL - ORDEM FINAL MOBILE
+========================================= */
+
+@media (max-width: 760px) {
+
+  .featured-product-section-letters .letters-featured-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .featured-product-section-letters .letters-featured-content {
+    display: contents;
+  }
+
+  .featured-product-section-letters .letters-featured-content .eyebrow {
+    order: 1;
+  }
+
+  .featured-product-section-letters .letters-featured-content h2 {
+    order: 2;
+
+    margin-bottom: 24px;
+  }
+
+  .featured-product-section-letters .letters-featured-visual {
+    order: 3;
+
+    width: 100%;
+    margin-bottom: 26px;
+  }
+
+  .featured-product-section-letters .letters-featured-content > p {
+    order: 4;
+  }
+
+  .featured-product-section-letters .letters-featured-content .btn {
+    order: 5;
+
+    width: 100%;
+    margin-top: 14px;
+  }
+
+}
