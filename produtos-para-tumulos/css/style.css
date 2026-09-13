@@ -5737,3 +5737,52 @@ footer {
   }
 
 }
+
+/* =========================================
+   LETRAS DE METAL - AJUSTE VISUAL MOBILE
+========================================= */
+
+@media (max-width: 760px) {
+
+  .featured-product-section-letters {
+    padding-top: 48px;
+    padding-bottom: 56px;
+  }
+
+  .featured-product-section-letters
+  .letters-featured-content .eyebrow {
+    width: 100%;
+
+    margin-bottom: 16px;
+
+    text-align: left;
+  }
+
+  .featured-product-section-letters
+  .letters-featured-content h2 {
+    margin-bottom: 22px;
+
+    font-size: 2rem;
+    line-height: 1.08;
+    letter-spacing: -0.025em;
+  }
+
+  .featured-product-section-letters
+  .letters-featured-visual {
+    margin-bottom: 24px;
+  }
+
+  .featured-product-section-letters
+  .letters-featured-content > p {
+    margin-bottom: 14px;
+
+    font-size: 0.95rem;
+    line-height: 1.62;
+  }
+
+  .featured-product-section-letters
+  .letters-featured-content .btn {
+    margin-top: 16px;
+  }
+
+}
