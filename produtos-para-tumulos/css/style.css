@@ -5492,3 +5492,46 @@ footer {
   }
 
 }
+
+/* =========================================
+   ACM COM FOTO - AJUSTE VISUAL FINAL MOBILE
+========================================= */
+
+@media (max-width: 760px) {
+
+  .featured-product-section-acm {
+    padding-top: 48px;
+    padding-bottom: 56px;
+  }
+
+  .featured-product-section-acm .acm-featured-content .eyebrow {
+    width: 100%;
+    margin-bottom: 16px;
+
+    text-align: left;
+  }
+
+  .featured-product-section-acm .acm-featured-content h2 {
+    margin-bottom: 22px;
+
+    font-size: 2rem;
+    line-height: 1.08;
+    letter-spacing: -0.025em;
+  }
+
+  .featured-product-section-acm .acm-featured-visual {
+    margin-bottom: 24px;
+  }
+
+  .featured-product-section-acm .acm-featured-content > p {
+    margin-bottom: 14px;
+
+    font-size: 0.95rem;
+    line-height: 1.62;
+  }
+
+  .featured-product-section-acm .acm-featured-content .btn {
+    margin-top: 16px;
+  }
+
+}
