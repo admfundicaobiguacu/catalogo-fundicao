@@ -5647,3 +5647,47 @@ footer {
   }
 
 }
+
+/* =========================================
+   FOTOS E RESTAURAÇÃO - AJUSTE VISUAL MOBILE
+========================================= */
+
+@media (max-width: 760px) {
+
+  .photo-restoration-section {
+    padding-top: 48px;
+    padding-bottom: 56px;
+  }
+
+  .photo-restoration-content .eyebrow {
+    width: 100%;
+
+    margin-bottom: 16px;
+
+    text-align: left;
+  }
+
+  .photo-restoration-content h2 {
+    margin-bottom: 22px;
+
+    font-size: 2rem;
+    line-height: 1.08;
+    letter-spacing: -0.025em;
+  }
+
+  .photo-restoration-visual {
+    margin-bottom: 26px;
+  }
+
+  .photo-restoration-content > p {
+    margin-bottom: 14px;
+
+    font-size: 0.95rem;
+    line-height: 1.62;
+  }
+
+  .photo-restoration-content .btn {
+    margin-top: 16px;
+  }
+
+}
