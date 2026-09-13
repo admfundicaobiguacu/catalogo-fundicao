@@ -5256,3 +5256,68 @@ footer {
   }
 
 }
+
+/* =========================================
+   ORIENTAÇÃO / DESAFIOS - AJUSTE FINAL MOBILE
+========================================= */
+
+@media (max-width: 760px) {
+
+  .section-challenges {
+    padding-top: 52px;
+    padding-bottom: 56px;
+  }
+
+  .section-challenges .section-heading-center {
+    margin-bottom: 32px;
+  }
+
+  .section-challenges .section-heading-center h2 {
+    font-size: 2rem;
+    line-height: 1.08;
+    letter-spacing: -0.025em;
+  }
+
+  .section-challenges .section-heading-center p {
+    margin-top: 20px;
+
+    font-size: 0.98rem;
+    line-height: 1.65;
+  }
+
+  .section-challenges .challenge-grid {
+    gap: 14px;
+  }
+
+  .section-challenges .info-card {
+    padding: 24px 22px;
+  }
+
+  .section-challenges .card-icon {
+    width: 40px;
+    height: 40px;
+
+    margin-bottom: 16px;
+  }
+
+  .section-challenges .info-card h3 {
+    margin-bottom: 10px;
+
+    font-size: 1.08rem;
+    line-height: 1.3;
+  }
+
+  .section-challenges .info-card p {
+    font-size: 0.9rem;
+    line-height: 1.55;
+  }
+
+  .section-challenges .section-closing {
+    max-width: 330px;
+
+    margin: 28px auto 0;
+
+    line-height: 1.45;
+  }
+
+}
