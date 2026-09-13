@@ -5786,3 +5786,511 @@ footer {
   }
 
 }
+
+/* =========================================
+   PRONTA ENTREGA - AJUSTE VISUAL MOBILE
+========================================= */
+
+@media (max-width: 760px) {
+
+  #pronta-entrega {
+    padding-top: 48px;
+    padding-bottom: 52px;
+  }
+
+  #pronta-entrega .stock-grid {
+    gap: 26px;
+  }
+
+  #pronta-entrega .stock-content .eyebrow {
+    width: 100%;
+
+    margin-bottom: 16px;
+
+    text-align: left;
+  }
+
+  #pronta-entrega .stock-content h2 {
+    margin-bottom: 18px;
+
+    font-size: 2rem;
+    line-height: 1.08;
+    letter-spacing: -0.025em;
+  }
+
+  #pronta-entrega .stock-content > p {
+    margin-bottom: 12px;
+
+    font-size: 0.95rem;
+    line-height: 1.6;
+  }
+
+  #pronta-entrega .stock-note {
+    margin-top: 14px;
+
+    font-size: 0.84rem;
+    line-height: 1.55;
+  }
+
+  #pronta-entrega .stock-content .btn {
+    width: 100%;
+
+    margin-top: 18px;
+  }
+
+  #pronta-entrega .stock-list {
+    gap: 10px;
+  }
+
+  #pronta-entrega .stock-item {
+    min-height: 64px;
+
+    gap: 12px;
+
+    padding: 12px 16px;
+  }
+
+  #pronta-entrega .stock-check {
+    width: 30px;
+    height: 30px;
+
+    flex: 0 0 30px;
+  }
+
+  #pronta-entrega .stock-item strong {
+    font-size: 0.9rem;
+    line-height: 1.3;
+  }
+
+  #pronta-entrega .stock-item div > span {
+    margin-top: 2px;
+
+    font-size: 0.75rem;
+    line-height: 1.4;
+  }
+
+}
+
+/* =========================================
+   FACILIDADES - AJUSTE VISUAL MOBILE
+========================================= */
+
+@media (max-width: 760px) {
+
+  #vantagens {
+    padding-top: 48px;
+    padding-bottom: 52px;
+  }
+
+  #vantagens .reseller-heading {
+    margin-bottom: 28px;
+
+    text-align: left;
+  }
+
+  #vantagens .reseller-heading .eyebrow {
+    margin-bottom: 16px;
+  }
+
+  #vantagens .reseller-heading h2 {
+    font-size: 2rem;
+    line-height: 1.08;
+    letter-spacing: -0.025em;
+  }
+
+  #vantagens .reseller-heading p {
+    margin-top: 18px;
+
+    font-size: 0.95rem;
+    line-height: 1.6;
+  }
+
+  #vantagens .reseller-grid {
+    gap: 12px;
+  }
+
+  #vantagens .reseller-card {
+    min-height: 0;
+
+    padding: 22px 20px;
+  }
+
+  #vantagens .reseller-number {
+    margin-bottom: 14px;
+
+    font-size: 0.72rem;
+  }
+
+  #vantagens .reseller-card h3 {
+    margin-bottom: 9px;
+
+    font-size: 1.05rem;
+    line-height: 1.3;
+  }
+
+  #vantagens .reseller-card p {
+    font-size: 0.88rem;
+    line-height: 1.55;
+  }
+
+  #vantagens .reseller-cta {
+    margin-top: 26px;
+
+    text-align: left;
+  }
+
+  #vantagens .reseller-cta p {
+    margin-bottom: 14px;
+
+    font-size: 0.92rem;
+    line-height: 1.5;
+  }
+
+  #vantagens .reseller-cta .btn {
+    width: 100%;
+  }
+
+}
+
+/* =========================================
+   COMO FUNCIONA - AJUSTE VISUAL MOBILE
+========================================= */
+
+@media (max-width: 760px) {
+
+  .process-section {
+    padding-top: 48px;
+    padding-bottom: 52px;
+  }
+
+  .process-section .process-heading {
+    margin-bottom: 28px;
+
+    text-align: left;
+  }
+
+  .process-section .process-heading .eyebrow {
+    margin-bottom: 16px;
+  }
+
+  .process-section .process-heading h2 {
+    font-size: 2rem;
+    line-height: 1.08;
+    letter-spacing: -0.025em;
+  }
+
+  .process-section .process-heading p {
+    margin-top: 18px;
+
+    font-size: 0.95rem;
+    line-height: 1.6;
+  }
+
+  .process-section .process-grid {
+    gap: 0;
+  }
+
+  .process-section .process-step,
+  .process-section .process-step:nth-child(2) {
+    padding:
+      0 0
+      28px
+      62px;
+  }
+
+  .process-section .process-step:last-child {
+    padding-bottom: 0;
+  }
+
+  .process-section .process-number {
+    width: 42px;
+    height: 42px;
+  }
+
+  .process-section .process-line {
+    left: 20px;
+    top: 52px;
+
+    height: calc(100% + 38px);
+  }
+
+  .process-section .process-step h3 {
+    margin-bottom: 9px;
+
+    padding-top: 1px;
+
+    font-size: 1.05rem;
+    line-height: 1.3;
+  }
+
+  .process-section .process-step p {
+    font-size: 0.88rem;
+    line-height: 1.55;
+  }
+
+  .process-section .process-footer {
+    margin-top: 26px;
+
+    text-align: left;
+  }
+
+  .process-section .process-footer p {
+    margin-bottom: 14px;
+
+    font-size: 0.92rem;
+    line-height: 1.5;
+  }
+
+  .process-section .process-footer .btn {
+    width: 100%;
+  }
+
+}
+
+/* =========================================
+   GARANTIA - AJUSTE FINAL MOBILE
+========================================= */
+
+@media (max-width: 760px) {
+
+  #garantia {
+    padding-top: 48px;
+    padding-bottom: 52px;
+  }
+
+  #garantia .warranty-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+  }
+
+  #garantia .warranty-content {
+    display: contents;
+  }
+
+  /* 01 - EYEBROW */
+
+  #garantia .warranty-content .eyebrow {
+    order: 1;
+
+    width: 100%;
+    margin-bottom: 16px;
+
+    text-align: left;
+  }
+
+  /* 02 - TÍTULO */
+
+  #garantia .warranty-content h2 {
+    order: 2;
+
+    margin-bottom: 22px;
+
+    font-size: 2rem;
+    line-height: 1.08;
+    letter-spacing: -0.025em;
+  }
+
+  /* 03 - DESTAQUE 5 ANOS */
+
+  #garantia .warranty-highlight {
+    order: 3;
+
+    width: 100%;
+    min-height: 220px;
+
+    margin-bottom: 24px;
+  }
+
+  #garantia .warranty-number {
+    font-size: 5.2rem;
+    line-height: 0.9;
+  }
+
+  #garantia .warranty-years {
+    margin-top: 10px;
+
+    font-size: 1.15rem;
+  }
+
+  #garantia .warranty-label {
+    margin-top: 7px;
+
+    font-size: 0.68rem;
+  }
+
+  /* 04 - INTRODUÇÃO */
+
+  #garantia .warranty-intro {
+    order: 4;
+
+    width: 100%;
+    margin-bottom: 22px;
+
+    font-size: 0.95rem;
+    line-height: 1.6;
+  }
+
+  /* 05 - CARDS */
+
+  #garantia .warranty-cards {
+    order: 5;
+
+    width: 100%;
+
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+
+  #garantia .warranty-card {
+    gap: 12px;
+
+    padding: 20px 18px;
+  }
+
+  #garantia .warranty-card-icon {
+    width: 32px;
+    height: 32px;
+
+    flex: 0 0 32px;
+  }
+
+  #garantia .warranty-category {
+    font-size: 0.7rem;
+    line-height: 1.35;
+  }
+
+  #garantia .warranty-card h3 {
+    margin-bottom: 7px;
+
+    font-size: 0.98rem;
+    line-height: 1.35;
+  }
+
+  #garantia .warranty-card p {
+    font-size: 0.82rem;
+    line-height: 1.55;
+  }
+
+  /* 06 - EXCLUSÕES DA GARANTIA */
+
+  #garantia .warranty-note {
+    order: 6;
+
+    width: 100%;
+
+    margin-top: 14px;
+    padding: 18px;
+  }
+
+  #garantia .warranty-note strong {
+    margin-bottom: 7px;
+
+    font-size: 0.92rem;
+    line-height: 1.4;
+  }
+
+  #garantia .warranty-note p {
+    font-size: 0.82rem;
+    line-height: 1.55;
+  }
+
+}
+
+/* =========================================
+   ENVIO E PAGAMENTO - AJUSTE VISUAL MOBILE
+========================================= */
+
+@media (max-width: 760px) {
+
+  #envio-pagamento {
+    padding-top: 48px;
+    padding-bottom: 52px;
+  }
+
+  #envio-pagamento .logistics-heading {
+    margin-bottom: 28px;
+
+    text-align: left;
+  }
+
+  #envio-pagamento .logistics-heading .eyebrow {
+    margin-bottom: 16px;
+  }
+
+  #envio-pagamento .logistics-heading h2 {
+    margin-left: 0;
+    margin-right: 0;
+
+    font-size: 2rem;
+    line-height: 1.08;
+    letter-spacing: -0.025em;
+  }
+
+  #envio-pagamento .logistics-heading p {
+    margin-top: 18px;
+    margin-left: 0;
+    margin-right: 0;
+
+    font-size: 0.95rem;
+    line-height: 1.6;
+  }
+
+  #envio-pagamento .logistics-grid {
+    grid-template-columns: 1fr;
+    gap: 14px;
+  }
+
+  #envio-pagamento .logistics-card {
+    padding: 22px 20px;
+  }
+
+  #envio-pagamento .logistics-card-top {
+    gap: 13px;
+
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+  }
+
+  #envio-pagamento .logistics-icon {
+    width: 42px;
+    height: 42px;
+
+    flex: 0 0 42px;
+  }
+
+  #envio-pagamento .logistics-card h3 {
+    margin-top: 3px;
+
+    font-size: 1.05rem;
+    line-height: 1.3;
+  }
+
+  #envio-pagamento .logistics-options {
+    gap: 16px;
+  }
+
+  #envio-pagamento .logistics-option {
+    gap: 12px;
+  }
+
+  #envio-pagamento .logistics-check {
+    width: 26px;
+    height: 26px;
+
+    flex: 0 0 26px;
+  }
+
+  #envio-pagamento .logistics-option strong {
+    font-size: 0.88rem;
+    line-height: 1.35;
+  }
+
+  #envio-pagamento .logistics-option div > span {
+    margin-top: 3px;
+
+    font-size: 0.78rem;
+    line-height: 1.5;
+  }
+
+}
