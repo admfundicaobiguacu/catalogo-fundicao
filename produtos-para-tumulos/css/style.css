@@ -7517,45 +7517,22 @@ footer {
   box-shadow: 0 20px 55px rgba(0, 0, 0, .08);
 
   user-select: none;
-  touch-action: pan-y;
+  -webkit-user-select: none;
+
+  touch-action: none;
+
+  cursor: ew-resize;
 }
+
+
+/* IMAGENS
+--------------------------------------------------------- */
 
 .acm-comparador__image {
   position: absolute;
   inset: 0;
 
   display: block;
-
-  width: 100%;
-  height: 100%;
-
-  object-fit: cover;
-
-  pointer-events: none;
-}
-
-.acm-comparador__image--after {
-  z-index: 1;
-}
-
-.acm-comparador {
-  --position: 50%;
-
-  position: relative;
-  width: 100%;
-  aspect-ratio: 1.25 / 1;
-  overflow: hidden;
-
-  border-radius: 28px;
-  background: #e9e6df;
-
-  user-select: none;
-  touch-action: pan-y;
-}
-
-.acm-comparador__image {
-  position: absolute;
-  inset: 0;
 
   width: 100%;
   height: 100%;
@@ -7581,42 +7558,95 @@ footer {
   );
 }
 
+
+/* LABELS
+--------------------------------------------------------- */
+
+.acm-comparador__label {
+  position: absolute;
+  top: 18px;
+
+  z-index: 5;
+
+  padding: 8px 12px;
+
+  border-radius: 999px;
+
+  background: rgba(255, 255, 255, .92);
+
+  color: #252525;
+
+  font-size: 11px;
+  line-height: 1;
+  font-weight: 800;
+  letter-spacing: .06em;
+
+  box-shadow: 0 3px 10px rgba(0, 0, 0, .08);
+
+  pointer-events: none;
+}
+
+.acm-comparador__label--before {
+  left: 18px;
+}
+
+.acm-comparador__label--after {
+  right: 18px;
+}
+
+
+/* LINHA DIVISÓRIA
+--------------------------------------------------------- */
+
 .acm-comparador__divider {
   position: absolute;
-  z-index: 4;
 
   top: 0;
   bottom: 0;
   left: var(--position);
 
+  z-index: 4;
+
   width: 3px;
 
   transform: translateX(-50%);
+
   background: #fff;
+
+  box-shadow:
+    0 0 0 1px rgba(0, 0, 0, .05);
 
   pointer-events: none;
 }
 
+
+/* BOTÃO CENTRAL
+--------------------------------------------------------- */
+
 .acm-comparador__handle {
   position: absolute;
-  z-index: 5;
 
   top: 50%;
   left: var(--position);
+
+  z-index: 6;
 
   display: flex;
   align-items: center;
   justify-content: center;
 
-  width: 50px;
-  height: 50px;
+  width: 52px;
+  height: 52px;
 
+  padding: 0;
+
+  border: 0;
   border-radius: 50%;
 
   transform: translate(-50%, -50%);
 
   background: #f4c400;
-  color: #111;
+  color: #171717;
 
   box-shadow: 0 4px 18px rgba(0, 0, 0, .2);
 
@@ -7634,135 +7664,34 @@ footer {
   stroke-linejoin: round;
 }
 
+
+/* RANGE INVISÍVEL
+--------------------------------------------------------- */
+
 .acm-comparador__range {
   position: absolute;
-  z-index: 10;
 
   inset: 0;
+
+  z-index: 10;
+
+  display: block;
 
   width: 100%;
   height: 100%;
 
   margin: 0;
-
-  opacity: 0;
-  cursor: ew-resize;
-}
-
-/* LABELS */
-
-.acm-comparador__label {
-  position: absolute;
-  top: 18px;
-
-  z-index: 5;
-
-  padding: 8px 12px;
-
-  border-radius: 999px;
-
-  background: rgba(255,255,255,.9);
-  backdrop-filter: blur(6px);
-
-  color: #252525;
-
-  font-size: 11px;
-  line-height: 1;
-  font-weight: 800;
-  letter-spacing: .06em;
-
-  box-shadow: 0 3px 10px rgba(0,0,0,.08);
-}
-
-.acm-comparador__label--before {
-  left: 18px;
-}
-
-.acm-comparador__label--after {
-  right: 18px;
-}
-
-
-/* DIVISOR */
-
-.acm-comparador__divider {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: var(--position);
-
-  z-index: 4;
-
-  width: 3px;
-
-  transform: translateX(-50%);
-
-  background: #fff;
-
-  pointer-events: none;
-}
-
-
-/* HANDLE */
-
-.acm-comparador__handle {
-  position: absolute;
-  top: 50%;
-  left: var(--position);
-
-  z-index: 6;
-
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  width: 52px;
-  height: 52px;
-
   padding: 0;
-  border: 0;
-  border-radius: 50%;
 
-  transform: translate(-50%, -50%);
-
-  background: #f4c400;
-  color: #171717;
-
-  box-shadow: 0 4px 18px rgba(0,0,0,.2);
-
-  pointer-events: none;
-}
-
-.acm-comparador__handle svg {
-  width: 24px;
-  height: 24px;
-
-  fill: none;
-  stroke: currentColor;
-  stroke-width: 2;
-  stroke-linecap: round;
-  stroke-linejoin: round;
-}
-
-
-/* RANGE INVISÍVEL */
-
-.acm-comparador__range {
-  position: absolute;
-  inset: 0;
-
-  z-index: 10;
-
-  width: 100%;
-  height: 100%;
-
-  margin: 0;
+  opacity: 0;
 
   cursor: ew-resize;
 
-  opacity: 0;
-}
+  -webkit-appearance: none;
+  appearance: none;
 
+  background: transparent;
+}
 
 /* TEXTO ABAIXO DO COMPARADOR */
 
