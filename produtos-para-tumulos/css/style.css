@@ -7841,3 +7841,247 @@ footer {
   letter-spacing: .06em;
   white-space: nowrap;
 }
+
+/* =========================================================
+   ACM - NOVA ORGANIZAÇÃO
+   Imagem esquerda + conteúdo direita + 4 benefícios em linha
+   ========================================================= */
+
+.acm-featured-grid {
+  display: grid;
+
+  grid-template-columns:
+    minmax(0, 1.08fr)
+    minmax(0, 0.92fr);
+
+  column-gap: 64px;
+  row-gap: 48px;
+
+  align-items: center;
+}
+
+
+/* ========================================
+   IMAGEM - ESQUERDA
+========================================= */
+
+.acm-featured-visual {
+  grid-column: 1;
+  grid-row: 1;
+
+  min-width: 0;
+}
+
+.acm-featured-image {
+  width: 100%;
+}
+
+.acm-featured-image img {
+  display: block;
+
+  width: 100%;
+  height: auto;
+
+  border-radius: 20px;
+
+  object-fit: cover;
+}
+
+
+/* ========================================
+   TEXTO - DIREITA
+========================================= */
+
+.acm-featured-content {
+  grid-column: 2;
+  grid-row: 1;
+
+  min-width: 0;
+}
+
+
+/* ========================================
+   BENEFÍCIOS
+========================================= */
+
+.acm-beneficios {
+  grid-column: 1 / -1;
+  grid-row: 2;
+
+  display: grid;
+
+  grid-template-columns:
+    repeat(4, minmax(0, 1fr));
+
+  gap: 26px;
+
+  width: 100%;
+  margin-top: 0;
+}
+
+
+/* BENEFÍCIO INDIVIDUAL */
+
+.acm-beneficio {
+  display: grid;
+
+  grid-template-columns:
+    58px minmax(0, 1fr);
+
+  gap: 15px;
+
+  align-items: center;
+
+  min-width: 0;
+}
+
+
+/* ÍCONE */
+
+.acm-beneficio__icon {
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  width: 56px;
+  height: 56px;
+
+  flex-shrink: 0;
+
+  border-radius: 50%;
+
+  background: #fff3cc;
+  color: #a77c00;
+}
+
+.acm-beneficio__icon svg {
+  width: 25px;
+  height: 25px;
+
+  fill: none;
+
+  stroke: currentColor;
+  stroke-width: 1.8;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+
+/* TEXTO DOS BENEFÍCIOS */
+
+.acm-beneficio__content {
+  min-width: 0;
+}
+
+.acm-beneficio h3 {
+  margin: 0 0 5px;
+
+  font-size: 16px;
+  line-height: 1.25;
+
+  font-weight: 800;
+
+  color: #181818;
+}
+
+.acm-beneficio p {
+  margin: 0;
+
+  font-size: 14px;
+  line-height: 1.5;
+
+  color: #626262;
+}
+
+
+/* =========================================================
+   TABLET
+   ========================================================= */
+
+@media (max-width: 1000px) {
+
+  .acm-featured-grid {
+    grid-template-columns: 1fr 1fr;
+
+    column-gap: 38px;
+    row-gap: 42px;
+  }
+
+  .acm-beneficios {
+    grid-template-columns:
+      repeat(2, minmax(0, 1fr));
+
+    gap: 28px 24px;
+  }
+
+}
+
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 700px) {
+
+  .acm-featured-grid {
+    grid-template-columns: 1fr;
+
+    gap: 28px;
+  }
+
+
+  /* imagem primeiro */
+
+  .acm-featured-visual {
+    grid-column: 1;
+    grid-row: 1;
+  }
+
+
+  /* texto depois */
+
+  .acm-featured-content {
+    grid-column: 1;
+    grid-row: 2;
+  }
+
+
+  /* benefícios por último */
+
+  .acm-beneficios {
+    grid-column: 1;
+    grid-row: 3;
+
+    grid-template-columns: 1fr;
+
+    gap: 22px;
+
+    margin-top: 6px;
+  }
+
+
+  .acm-beneficio {
+    grid-template-columns:
+      52px minmax(0, 1fr);
+
+    gap: 14px;
+  }
+
+
+  .acm-beneficio__icon {
+    width: 50px;
+    height: 50px;
+  }
+
+
+  .acm-beneficio h3 {
+    font-size: 16px;
+  }
+
+
+  .acm-beneficio p {
+    font-size: 14px;
+  }
+
+}
