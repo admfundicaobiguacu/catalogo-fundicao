@@ -7003,3 +7003,294 @@ footer {
 
 }
 
+/* =========================================================
+   PRODUTOS B2C
+   ========================================================= */
+
+.produtos-b2c {
+  padding: 92px 24px 96px;
+  background: #fff;
+}
+
+.produtos-b2c__container {
+  width: min(1180px, 100%);
+  margin: 0 auto;
+}
+
+
+/* CABEÇALHO
+--------------------------------------------------------- */
+
+.produtos-b2c__header {
+  max-width: 860px;
+  margin: 0 auto 52px;
+  text-align: center;
+}
+
+.produtos-b2c__eyebrow {
+  display: block;
+  margin-bottom: 20px;
+
+  color: #9b7300;
+
+  font-size: 12px;
+  line-height: 1.3;
+  font-weight: 800;
+  letter-spacing: .14em;
+}
+
+.produtos-b2c__title {
+  margin: 0;
+
+  color: #202124;
+
+  font-size: clamp(40px, 4vw, 58px);
+  line-height: 1.04;
+  letter-spacing: -.035em;
+  font-weight: 800;
+}
+
+.produtos-b2c__intro {
+  max-width: 800px;
+  margin: 24px auto 0;
+
+  color: #666;
+
+  font-size: 17px;
+  line-height: 1.65;
+}
+
+
+/* GRID
+--------------------------------------------------------- */
+
+.produtos-b2c__grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 42px 18px;
+}
+
+
+/* CARD
+--------------------------------------------------------- */
+
+.produto-b2c-card {
+  min-width: 0;
+}
+
+.produto-b2c-card__image {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 1.5 / 1;
+  overflow: hidden;
+
+  background: #f4f1eb;
+}
+
+.produto-b2c-card__image img {
+  display: block;
+
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+}
+
+.produto-b2c-card__content {
+  padding: 20px 20px 0;
+}
+
+.produto-b2c-card__number {
+  display: block;
+  margin-bottom: 10px;
+
+  color: #9b7300;
+
+  font-size: 12px;
+  line-height: 1;
+  font-weight: 800;
+  letter-spacing: .06em;
+}
+
+.produto-b2c-card h3 {
+  margin: 0 0 10px;
+
+  color: #181818;
+
+  font-size: 19px;
+  line-height: 1.25;
+  font-weight: 800;
+}
+
+.produto-b2c-card p {
+  margin: 0;
+
+  color: #676767;
+
+  font-size: 15px;
+  line-height: 1.55;
+}
+
+
+/* CTA FINAL
+--------------------------------------------------------- */
+
+.produtos-b2c__cta {
+  max-width: 720px;
+  margin: 62px auto 0;
+  text-align: center;
+}
+
+.produtos-b2c__cta h3 {
+  margin: 0;
+
+  color: #202124;
+
+  font-size: 25px;
+  line-height: 1.25;
+  font-weight: 800;
+}
+
+.produtos-b2c__cta > p {
+  max-width: 600px;
+  margin: 12px auto 24px;
+
+  color: #666;
+
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.produtos-b2c__button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+
+  min-height: 56px;
+  padding: 0 28px;
+
+  border-radius: 9px;
+
+  background: #f4c400;
+  color: #111;
+
+  font-size: 14px;
+  line-height: 1;
+  font-weight: 800;
+  text-decoration: none;
+
+  transition:
+    transform .2s ease,
+    box-shadow .2s ease,
+    background .2s ease;
+}
+
+.produtos-b2c__button:hover {
+  transform: translateY(-2px);
+  background: #e9bb00;
+  box-shadow: 0 10px 25px rgba(190, 150, 0, .18);
+}
+
+.produtos-b2c__helper {
+  display: block;
+
+  max-width: 570px;
+  margin: 14px auto 0;
+
+  color: #727272;
+
+  font-size: 13px;
+  line-height: 1.5;
+}
+
+
+/* TABLET
+--------------------------------------------------------- */
+
+@media (max-width: 900px) {
+
+  .produtos-b2c {
+    padding: 72px 22px;
+  }
+
+  .produtos-b2c__grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 38px 18px;
+  }
+
+}
+
+
+/* MOBILE
+--------------------------------------------------------- */
+
+@media (max-width: 600px) {
+
+  .produtos-b2c {
+    padding: 58px 18px 64px;
+  }
+
+  .produtos-b2c__header {
+    margin-bottom: 36px;
+    text-align: left;
+  }
+
+  .produtos-b2c__eyebrow {
+    margin-bottom: 14px;
+
+    font-size: 11px;
+  }
+
+  .produtos-b2c__title {
+    font-size: 34px;
+    line-height: 1.07;
+  }
+
+  .produtos-b2c__intro {
+    margin-top: 18px;
+
+    font-size: 16px;
+    line-height: 1.6;
+  }
+
+  .produtos-b2c__grid {
+    grid-template-columns: 1fr;
+    gap: 34px;
+  }
+
+  .produto-b2c-card__content {
+    padding: 17px 4px 0;
+  }
+
+  .produto-b2c-card h3 {
+    font-size: 18px;
+  }
+
+  .produto-b2c-card p {
+    font-size: 14px;
+  }
+
+  .produtos-b2c__cta {
+    margin-top: 46px;
+    text-align: left;
+  }
+
+  .produtos-b2c__cta h3 {
+    font-size: 23px;
+  }
+
+  .produtos-b2c__cta > p {
+    margin-left: 0;
+  }
+
+  .produtos-b2c__button {
+    width: 100%;
+  }
+
+  .produtos-b2c__helper {
+    margin-left: 0;
+    text-align: center;
+  }
+
+}
