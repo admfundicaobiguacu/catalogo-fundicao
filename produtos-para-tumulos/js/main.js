@@ -322,18 +322,26 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 <script>
-document.querySelectorAll('[data-acm-comparador]').forEach((comparador) => {
-  const range = comparador.querySelector('.acm-comparador__range');
+document.addEventListener('DOMContentLoaded', function () {
 
-  if (!range) return;
+  document.querySelectorAll('[data-acm-comparador]').forEach(function (comparador) {
 
-  const atualizarComparador = () => {
-    comparador.style.setProperty('--position', `${range.value}%`);
-  };
+    const range = comparador.querySelector('.acm-comparador__range');
 
-  range.addEventListener('input', atualizarComparador);
-  range.addEventListener('change', atualizarComparador);
+    if (!range) return;
 
-  atualizarComparador();
+    function atualizar() {
+      comparador.style.setProperty(
+        '--position',
+        range.value + '%'
+      );
+    }
+
+    range.addEventListener('input', atualizar);
+
+    atualizar();
+
+  });
+
 });
 </script>
