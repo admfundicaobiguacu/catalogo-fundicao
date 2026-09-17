@@ -320,3 +320,20 @@ document.addEventListener('DOMContentLoaded', function () {
   }
 
 });
+
+<script>
+document.querySelectorAll('[data-acm-comparador]').forEach((comparador) => {
+  const range = comparador.querySelector('.acm-comparador__range');
+
+  if (!range) return;
+
+  const atualizarComparador = () => {
+    comparador.style.setProperty('--position', `${range.value}%`);
+  };
+
+  range.addEventListener('input', atualizarComparador);
+  range.addEventListener('change', atualizarComparador);
+
+  atualizarComparador();
+});
+</script>
