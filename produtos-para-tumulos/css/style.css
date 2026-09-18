@@ -7484,7 +7484,12 @@ footer {
 }
 
 .acm-comparador__eyebrow {
+  display: block;
+  width: 100%;
+
   margin-bottom: 15px;
+
+  text-align: center;
 }
 
 .acm-comparador {
