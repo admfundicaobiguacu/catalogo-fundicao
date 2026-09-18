@@ -8486,3 +8486,28 @@ footer {
   }
 
 }
+
+.pronta-entrega-finados {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+
+  margin-top: 16px;
+}
+
+.pronta-entrega-finados strong {
+  color: #9b7300;
+
+  font-size: 12px;
+  line-height: 1.2;
+
+  font-weight: 800;
+  letter-spacing: .10em;
+}
+
+.pronta-entrega-finados span {
+  color: #666;
+
+  font-size: 14px;
+  line-height: 1.45;
+}
