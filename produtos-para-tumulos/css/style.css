@@ -9140,6 +9140,97 @@ footer {
   }
 
 }
+<<<<<<< HEAD
+
+/* =========================================================
+   PRONTA ENTREGA - AJUSTE MOBILE FINAL
+========================================================= */
+
+@media (max-width: 760px) {
+
+  #pronta-entrega {
+    padding-top: 48px;
+    padding-bottom: 52px;
+  }
+
+  #pronta-entrega .stock-grid {
+    gap: 24px;
+  }
+
+  #pronta-entrega .stock-content h2 {
+    margin-bottom: 18px;
+
+    font-size: 2rem;
+    line-height: 1.08;
+    letter-spacing: -0.025em;
+  }
+
+  #pronta-entrega .stock-content > p {
+    margin-bottom: 12px;
+
+    font-size: 15px;
+    line-height: 1.6;
+  }
+
+  #pronta-entrega .stock-content .btn {
+    width: 100%;
+
+    margin-top: 18px;
+  }
+
+
+  /* AVISO FINADOS */
+
+  .pronta-entrega-finados {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+
+    margin-top: 10px;
+
+    padding: 12px 14px;
+
+    border-left: 3px solid #e0ad00;
+
+    background: #fff8dc;
+
+    border-radius: 0 8px 8px 0;
+  }
+
+  .pronta-entrega-finados strong {
+    color: #9b7300;
+
+    font-size: 11px;
+    line-height: 1.2;
+
+    font-weight: 800;
+    letter-spacing: .10em;
+  }
+
+  .pronta-entrega-finados span {
+    color: #555;
+
+    font-size: 13px;
+    line-height: 1.45;
+  }
+
+
+  /* LISTA */
+
+  #pronta-entrega .stock-list {
+    gap: 10px;
+  }
+
+  #pronta-entrega .stock-item {
+    min-height: 64px;
+
+    gap: 12px;
+
+    padding: 12px 16px;
+  }
+
+}
+=======
 
 /* =========================================================
    PRODUÇÃO E QUALIDADE - ORDEM FINAL MOBILE
@@ -9277,3 +9368,4 @@ footer {
   }
 
 }
+>>>>>>> 7cb041db0b88be93b0aa772c5b6749a2c00e464f
