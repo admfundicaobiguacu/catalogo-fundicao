@@ -8513,7 +8513,7 @@ footer {
 }
 
 /* ========================================
-   HERO - ORDEM MOBILE
+   HERO - ORDEM E ESPAÇAMENTO MOBILE
 ========================================= */
 
 @media (max-width: 760px) {
@@ -8521,99 +8521,133 @@ footer {
   .hero-grid {
     display: flex;
     flex-direction: column;
+
+    /* IMPORTANTE:
+       elimina o gap de 24px do CSS mobile anterior */
+    gap: 0;
+
+    padding-top: 24px;
+    padding-bottom: 28px;
   }
 
+
   /*
-   * Faz os elementos internos de .hero-content
-   * participarem da mesma ordenação da imagem.
-   * Isso permite colocar a imagem entre o título
-   * e a descrição sem duplicá-la no HTML.
+   * Permite ordenar os elementos internos
+   * junto com a imagem.
    */
   .hero-content {
     display: contents;
   }
 
 
-  /* 01 - EYEBROW */
+  /* ========================================
+     01 - FINADOS
+  ========================================= */
 
   .hero .eyebrow {
     order: 1;
+
+    margin: 0 0 14px;
   }
 
 
-  /* 02 - TÍTULO */
+  /* ========================================
+     02 - TÍTULO
+  ========================================= */
 
   .hero h1 {
     order: 2;
+
+    margin: 0;
   }
 
 
-  /* 03 - IMAGEM */
+  /* ========================================
+     03 - IMAGEM
+  ========================================= */
 
   .hero-visual {
     order: 3;
 
     width: 100%;
-    margin: 26px 0 24px;
+
+    margin: 18px 0;
+
+    justify-content: center;
   }
 
   .hero-image {
     display: block;
 
     width: 100%;
+    max-width: none;
     height: auto;
 
+    margin: 0;
+
     border-radius: 0;
+
     object-fit: cover;
   }
 
 
-  /* 04 - TEXTO */
+  /* ========================================
+     04 - DESCRIÇÃO
+  ========================================= */
 
   .hero-description {
     order: 4;
+
+    margin: 0;
+
+    font-size: 1rem;
+    line-height: 1.6;
   }
 
 
-  /* 05 - PRAZO FINADOS */
+  /* ========================================
+     05 - PRAZO FINADOS
+  ========================================= */
 
   .hero-deadline {
     order: 5;
+
+    width: 100%;
+    max-width: none;
+
+    margin: 18px 0 0;
+
+    text-align: left;
   }
 
 
-  /* 06 - CTA + MICROCOPY */
+  /* ========================================
+     06 - CTA + MICROCOPY
+  ========================================= */
 
   .hero-actions {
     order: 6;
+
+    margin: 18px 0 0;
   }
 
-}
+  .hero-actions .btn {
+    width: 100%;
 
-@media (max-width: 760px) {
-
-  .hero .eyebrow {
-    margin-bottom: 18px;
-  }
-
-  .hero h1 {
-    margin-bottom: 0;
-  }
-
-  .hero-description {
-    margin-top: 0;
-  }
-
-  .hero-deadline {
-    margin-top: 22px;
-  }
-
-  .hero-actions {
-    margin-top: 22px;
+    margin: 0;
   }
 
   .hero-microcopy {
-    margin-top: 14px;
+    max-width: 290px;
+
+    margin:
+      10px auto
+      0;
+
+    text-align: center;
+
+    font-size: 0.88rem;
+    line-height: 1.45;
   }
 
 }
