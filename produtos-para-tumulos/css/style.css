@@ -7270,7 +7270,138 @@ footer {
 /* MOBILE
 --------------------------------------------------------- */
 
+@m/* MOBILE
+--------------------------------------------------------- */
+
 @media (max-width: 600px) {
+
+  .produtos-b2c {
+    padding: 48px 18px 56px;
+  }
+
+
+  /* CABEÇALHO
+  ---------------------------------------- */
+
+  .produtos-b2c__header {
+    margin-bottom: 28px;
+
+    text-align: left;
+  }
+
+  .produtos-b2c__eyebrow {
+    margin-bottom: 12px;
+
+    font-size: 11px;
+  }
+
+  .produtos-b2c__title {
+    font-size: 34px;
+    line-height: 1.07;
+  }
+
+  .produtos-b2c__intro {
+    margin-top: 16px;
+
+    font-size: 16px;
+    line-height: 1.55;
+  }
+
+
+  /* GRID DE PRODUTOS
+  ---------------------------------------- */
+
+  .produtos-b2c__grid {
+    grid-template-columns: 1fr;
+
+    gap: 28px;
+  }
+
+
+  /* IMAGEM
+  ---------------------------------------- */
+
+  .produto-b2c-card__image {
+    width: 100%;
+
+    aspect-ratio: 1.5 / 1;
+  }
+
+  .produto-b2c-card__image img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+  }
+
+
+  /* CONTEÚDO DOS CARDS
+  ---------------------------------------- */
+
+  .produto-b2c-card__content {
+    padding: 14px 6px 0;
+  }
+
+  .produto-b2c-card__number {
+    margin-bottom: 8px;
+  }
+
+  .produto-b2c-card h3 {
+    margin-bottom: 8px;
+
+    font-size: 18px;
+    line-height: 1.25;
+  }
+
+  .produto-b2c-card p {
+    font-size: 14px;
+    line-height: 1.5;
+  }
+
+
+  /* CTA FINAL
+  ---------------------------------------- */
+
+  .produtos-b2c__cta {
+    margin-top: 34px;
+
+    text-align: left;
+  }
+
+  .produtos-b2c__cta h3 {
+    font-size: 23px;
+    line-height: 1.25;
+  }
+
+  .produtos-b2c__cta > p {
+    margin:
+      12px 0
+      20px;
+
+    font-size: 15px;
+    line-height: 1.55;
+  }
+
+  .produtos-b2c__button {
+    width: 100%;
+
+    min-height: 54px;
+
+    padding: 0 16px;
+  }
+
+  .produtos-b2c__helper {
+    margin:
+      10px 0
+      0;
+
+    font-size: 13px;
+    line-height: 1.5;
+
+    text-align: center;
+  }
+
+}edia (max-width: 600px) {
 
   .produtos-b2c {
     padding: 58px 18px 64px;
