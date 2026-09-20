@@ -8511,3 +8511,109 @@ footer {
   font-size: 14px;
   line-height: 1.45;
 }
+
+/* ========================================
+   HERO - ORDEM MOBILE
+========================================= */
+
+@media (max-width: 760px) {
+
+  .hero-grid {
+    display: flex;
+    flex-direction: column;
+  }
+
+  /*
+   * Faz os elementos internos de .hero-content
+   * participarem da mesma ordenação da imagem.
+   * Isso permite colocar a imagem entre o título
+   * e a descrição sem duplicá-la no HTML.
+   */
+  .hero-content {
+    display: contents;
+  }
+
+
+  /* 01 - EYEBROW */
+
+  .hero .eyebrow {
+    order: 1;
+  }
+
+
+  /* 02 - TÍTULO */
+
+  .hero h1 {
+    order: 2;
+  }
+
+
+  /* 03 - IMAGEM */
+
+  .hero-visual {
+    order: 3;
+
+    width: 100%;
+    margin: 26px 0 24px;
+  }
+
+  .hero-image {
+    display: block;
+
+    width: 100%;
+    height: auto;
+
+    border-radius: 0;
+    object-fit: cover;
+  }
+
+
+  /* 04 - TEXTO */
+
+  .hero-description {
+    order: 4;
+  }
+
+
+  /* 05 - PRAZO FINADOS */
+
+  .hero-deadline {
+    order: 5;
+  }
+
+
+  /* 06 - CTA + MICROCOPY */
+
+  .hero-actions {
+    order: 6;
+  }
+
+}
+
+@media (max-width: 760px) {
+
+  .hero .eyebrow {
+    margin-bottom: 18px;
+  }
+
+  .hero h1 {
+    margin-bottom: 0;
+  }
+
+  .hero-description {
+    margin-top: 0;
+  }
+
+  .hero-deadline {
+    margin-top: 22px;
+  }
+
+  .hero-actions {
+    margin-top: 22px;
+  }
+
+  .hero-microcopy {
+    margin-top: 14px;
+  }
+
+}
