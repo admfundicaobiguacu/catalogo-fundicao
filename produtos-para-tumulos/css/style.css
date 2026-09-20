@@ -8962,3 +8962,117 @@ footer {
   }
 
 }
+
+/* =========================================================
+   ACM ANTES/DEPOIS - AJUSTE MOBILE FINAL
+========================================================= */
+
+@media (max-width: 760px) {
+
+  .acm-destaque {
+    padding:
+      46px
+      18px
+      52px;
+  }
+
+  .acm-destaque__container {
+    gap: 0;
+  }
+
+
+  /* EYEBROW PRINCIPAL */
+
+  .acm-destaque__eyebrow {
+    margin: 0 0 14px;
+
+    text-align: left;
+
+    font-size: 11px;
+  }
+
+
+  /* TÍTULO */
+
+  .acm-destaque__title {
+    margin: 0;
+
+    font-size: 36px;
+    line-height: 1.03;
+    letter-spacing: -0.035em;
+  }
+
+
+  /* TEXTO */
+
+  .acm-destaque__description {
+    margin-top: 20px;
+
+    font-size: 16px;
+    line-height: 1.6;
+  }
+
+  .acm-destaque__lead {
+    margin-top: 18px;
+
+    font-size: 15px;
+    line-height: 1.55;
+  }
+
+
+  /* COMPARADOR */
+
+  .acm-destaque__visual {
+    margin-top: 28px;
+  }
+
+  .acm-comparador__eyebrow {
+    margin-bottom: 12px;
+
+    text-align: center;
+
+    font-size: 11px;
+  }
+
+  .acm-comparador {
+    width: 100%;
+
+    aspect-ratio: 1 / 1;
+
+    border-radius: 20px;
+  }
+
+
+  /* TEXTO ABAIXO DA IMAGEM */
+
+  .acm-destaque__visual-text {
+    margin-top: 14px;
+
+    font-size: 14px;
+    line-height: 1.55;
+  }
+
+
+  /* CTA */
+
+  .acm-destaque__cta {
+    margin-top: 24px;
+
+    width: 100%;
+  }
+
+  .acm-destaque__button {
+    width: 100%;
+  }
+
+
+  /* TEXTO DE SEGURANÇA */
+
+  .acm-destaque__security {
+    margin-top: 16px;
+
+    font-size: 13px;
+    line-height: 1.55;
+  }
+
+}
