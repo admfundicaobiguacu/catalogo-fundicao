@@ -8811,3 +8811,154 @@ footer {
   }
 
 }
+
+/* =========================================================
+   ACM COM FOTO - ORDEM FINAL MOBILE
+   ========================================================= */
+
+@media (max-width: 760px) {
+
+  /* CONTAINER PRINCIPAL */
+
+  .featured-product-section-acm .acm-featured-grid {
+    display: flex !important;
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .featured-product-section-acm .acm-featured-content {
+    display: contents;
+  }
+
+
+  /* 01 - EYEBROW */
+
+  .featured-product-section-acm
+  .acm-featured-content
+  > .eyebrow {
+    order: 1;
+
+    width: 100%;
+    margin: 0 0 12px;
+
+    text-align: left;
+  }
+
+
+  /* 02 - TÍTULO */
+
+  .featured-product-section-acm
+  .acm-featured-content
+  > h2 {
+    order: 2;
+
+    margin: 0;
+
+    font-size: 2rem;
+    line-height: 1.08;
+    letter-spacing: -0.025em;
+  }
+
+
+  /* 03 - IMAGEM */
+
+  .featured-product-section-acm
+  .acm-featured-visual {
+    order: 3;
+
+    width: 100%;
+
+    margin: 22px 0;
+  }
+
+  .featured-product-section-acm
+  .acm-featured-image {
+    width: 100%;
+
+    height: auto !important;
+    min-height: 0 !important;
+
+    overflow: hidden;
+
+    border-radius: 20px;
+  }
+
+  .featured-product-section-acm
+  .acm-featured-image img {
+    display: block;
+
+    width: 100%;
+    height: auto !important;
+
+    object-fit: contain;
+
+    border-radius: 20px;
+  }
+
+
+  /* 04 - TEXTOS */
+
+  .featured-product-section-acm
+  .acm-featured-content
+  > p {
+    order: 4;
+
+    margin: 0 0 14px;
+
+    font-size: 0.95rem;
+    line-height: 1.62;
+  }
+
+
+  /* 05 - CTA */
+
+  .featured-product-section-acm
+  .acm-featured-content
+  > .btn {
+    order: 5;
+
+    width: 100%;
+
+    margin: 6px 0 0;
+  }
+
+
+  /* 06 - BENEFÍCIOS */
+
+  .featured-product-section-acm
+  .acm-beneficios {
+    order: 6;
+
+    display: grid;
+
+    grid-template-columns: 1fr;
+
+    gap: 18px;
+
+    width: 100%;
+
+    margin: 28px 0 0;
+  }
+
+
+  /* BENEFÍCIO INDIVIDUAL */
+
+  .featured-product-section-acm
+  .acm-beneficio {
+    display: grid;
+
+    grid-template-columns:
+      50px minmax(0, 1fr);
+
+    gap: 14px;
+
+    align-items: center;
+  }
+
+  .featured-product-section-acm
+  .acm-beneficio__icon {
+    width: 50px;
+    height: 50px;
+  }
+
+}
