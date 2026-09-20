@@ -8478,97 +8478,141 @@ footer {
 
 
 /* =========================================================
-   MOBILE
+   TAMANHOS ACM - MOBILE
 ========================================================= */
 
-@media (max-width: 600px) {
+@media (max-width: 760px) {
 
   .acm-sizes-section {
     padding:
-      64px
+      48px
       18px
-      72px;
+      56px;
   }
 
+
+  /* CABEÇALHO
+  ---------------------------------------- */
 
   .acm-sizes-header {
-    margin-bottom: 42px;
+    margin-bottom: 30px;
   }
 
+  .acm-sizes-header .eyebrow {
+    margin-bottom: 12px;
+
+    font-size: 11px;
+  }
 
   .acm-sizes-header h2 {
-    font-size: 36px;
+    font-size: 34px;
     line-height: 1.06;
   }
 
-
   .acm-sizes-header p {
+    margin-top: 16px;
+
     font-size: 16px;
     line-height: 1.55;
   }
 
 
+  /* GRID
+  ---------------------------------------- */
+
   .acm-sizes-grid {
     grid-template-columns: 1fr;
 
-    gap: 30px;
+    gap: 28px;
   }
 
+
+  /* CARD
+  ---------------------------------------- */
 
   .acm-size-card {
     padding:
-      18px
-      18px
-      22px;
+      14px
+      14px
+      20px;
+
+    border-radius: 16px;
   }
 
+
+  /* IMAGEM
+  ---------------------------------------- */
 
   .acm-size-card__image {
     height: auto;
-    aspect-ratio: 1.65 / 1;
+
+    aspect-ratio: 1.72 / 1;
+
+    margin-bottom: 14px;
   }
 
+
+  /* TAMANHO
+  ---------------------------------------- */
 
   .acm-size-card h3 {
-    font-size: 26px;
+    margin-bottom: 8px;
+
+    font-size: 25px;
+    line-height: 1.1;
   }
 
+
+  /* TAG
+  ---------------------------------------- */
+
+  .acm-size-card__tag {
+    min-height: 32px;
+
+    margin-bottom: 14px;
+
+    padding:
+      6px
+      18px;
+  }
+
+
+  /* DESCRIÇÃO
+  ---------------------------------------- */
 
   .acm-size-card p {
+    margin-bottom: 18px;
+
     font-size: 15px;
+    line-height: 1.48;
   }
 
+
+  /* PREÇO
+  ---------------------------------------- */
 
   .acm-size-card__price {
+    margin-top: 4px;
+
     font-size: 30px;
+
+    text-align: center !important;
+  }
+
+
+  /* SELO MAIS VENDIDA
+  ---------------------------------------- */
+
+  .acm-size-card__featured-label {
+    padding:
+      8px
+      22px;
+
+    font-size: 11px;
   }
 
 }
 
-.pronta-entrega-finados {
-  display: flex;
-  flex-direction: column;
-  gap: 3px;
-
-  margin-top: 16px;
-}
-
-.pronta-entrega-finados strong {
-  color: #9b7300;
-
-  font-size: 12px;
-  line-height: 1.2;
-
-  font-weight: 800;
-  letter-spacing: .10em;
-}
-
-.pronta-entrega-finados span {
-  color: #666;
-
-  font-size: 14px;
-  line-height: 1.45;
-}
 
 /* ========================================
    HERO - ORDEM E ESPAÇAMENTO MOBILE
