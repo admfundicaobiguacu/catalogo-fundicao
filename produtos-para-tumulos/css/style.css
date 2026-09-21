@@ -9504,3 +9504,37 @@ footer {
   }
 
 }
+
+/* =========================================
+   CTA ACRÍLICO - MOBILE
+========================================= */
+
+@media (max-width: 760px) {
+
+  .featured-product-section-acrylic .btn {
+    width: 100%;
+
+    min-height: 56px;
+
+    padding:
+      0
+      14px;
+
+    gap: 9px;
+
+    font-size: 13px;
+    line-height: 1.15;
+
+    white-space: nowrap;
+
+    justify-content: center;
+  }
+
+  .featured-product-section-acrylic .btn .icon-whatsapp {
+    width: 20px;
+    height: 20px;
+
+    flex-shrink: 0;
+  }
+
+}
