@@ -9506,35 +9506,46 @@ footer {
 }
 
 /* =========================================
-   CTA ACRÍLICO - MOBILE
+   LETRAS DE ACRÍLICO - CTA MOBILE
 ========================================= */
 
 @media (max-width: 760px) {
 
-  .featured-product-section-acrylic .btn {
-    width: 100%;
+  #letras-acrilico .acrylic-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
+    width: 100%;
     min-height: 56px;
 
-    padding:
-      0
-      14px;
+    padding: 0 14px;
 
-    gap: 9px;
+    gap: 10px;
 
     font-size: 13px;
-    line-height: 1.15;
+    line-height: 1;
+
+    text-align: center;
+
+    flex-wrap: nowrap;
+  }
+
+  #letras-acrilico .acrylic-button span {
+    display: block;
 
     white-space: nowrap;
 
-    justify-content: center;
+    font-size: 13px;
+    line-height: 1;
+    font-weight: 800;
   }
 
-  .featured-product-section-acrylic .btn .icon-whatsapp {
-    width: 20px;
-    height: 20px;
+  #letras-acrilico .acrylic-button .icon-whatsapp {
+    width: 21px;
+    height: 21px;
 
-    flex-shrink: 0;
+    flex: 0 0 21px;
   }
 
 }
