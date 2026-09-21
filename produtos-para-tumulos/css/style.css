@@ -9229,3 +9229,278 @@ footer {
   }
 
 }
+
+
+/* =========================================================
+   DESTAQUE - LETRAS DE ACRÍLICO
+========================================================= */
+
+.acrylic-section {
+  padding: 90px 24px;
+
+  background:
+    linear-gradient(
+      110deg,
+      #ffffff 0%,
+      #ffffff 55%,
+      #fffdf5 100%
+    );
+}
+
+.acrylic-grid {
+  display: grid;
+
+  grid-template-columns:
+    minmax(0, .9fr)
+    minmax(0, 1.35fr);
+
+  gap: 70px;
+
+  align-items: center;
+}
+
+
+/* CONTEÚDO
+--------------------------------------------------------- */
+
+.acrylic-content {
+  min-width: 0;
+}
+
+.acrylic-content .eyebrow {
+  margin-bottom: 16px;
+}
+
+.acrylic-content h2 {
+  max-width: 600px;
+
+  margin: 0;
+
+  font-size: clamp(42px, 4vw, 68px);
+  line-height: .98;
+  letter-spacing: -.04em;
+}
+
+.acrylic-description {
+  max-width: 620px;
+
+  margin: 26px 0 0;
+
+  color: #666;
+
+  font-size: 17px;
+  line-height: 1.65;
+}
+
+
+/* BENEFÍCIOS
+--------------------------------------------------------- */
+
+.acrylic-benefits {
+  display: grid;
+
+  grid-template-columns:
+    repeat(3, minmax(0, 1fr));
+
+  gap: 22px;
+
+  margin-top: 34px;
+}
+
+.acrylic-benefit {
+  text-align: center;
+}
+
+.acrylic-benefit__icon {
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  width: 58px;
+  height: 58px;
+
+  margin: 0 auto 12px;
+
+  border-radius: 50%;
+
+  background: #fff4cf;
+  color: #aa7e00;
+}
+
+.acrylic-benefit__icon svg {
+  width: 26px;
+  height: 26px;
+
+  fill: none;
+
+  stroke: currentColor;
+  stroke-width: 1.8;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.acrylic-benefit h3 {
+  margin: 0 0 6px;
+
+  font-size: 15px;
+  line-height: 1.25;
+}
+
+.acrylic-benefit p {
+  margin: 0;
+
+  color: #686868;
+
+  font-size: 13px;
+  line-height: 1.45;
+}
+
+
+/* CTA
+--------------------------------------------------------- */
+
+.acrylic-button {
+  margin-top: 34px;
+}
+
+
+/* IMAGEM
+--------------------------------------------------------- */
+
+.acrylic-visual {
+  min-width: 0;
+
+  overflow: hidden;
+
+  border-radius: 26px;
+}
+
+.acrylic-visual img {
+  display: block;
+
+  width: 100%;
+  height: auto;
+
+  object-fit: cover;
+}
+
+@media (max-width: 760px) {
+
+  .acrylic-section {
+    padding:
+      48px
+      18px
+      54px;
+  }
+
+  .acrylic-grid {
+    display: flex;
+    flex-direction: column;
+
+    gap: 0;
+  }
+
+
+  /* TEXTO */
+
+  .acrylic-content {
+    display: contents;
+  }
+
+  .acrylic-content .eyebrow {
+    order: 1;
+
+    width: 100%;
+
+    margin: 0 0 12px;
+  }
+
+  .acrylic-content h2 {
+    order: 2;
+
+    width: 100%;
+
+    font-size: 36px;
+    line-height: 1.04;
+  }
+
+  .acrylic-description {
+    order: 3;
+
+    width: 100%;
+
+    margin: 18px 0 0;
+
+    font-size: 16px;
+    line-height: 1.6;
+  }
+
+
+  /* IMAGEM */
+
+  .acrylic-visual {
+    order: 4;
+
+    width: 100%;
+
+    margin: 24px 0 0;
+
+    border-radius: 18px;
+  }
+
+
+  /* BENEFÍCIOS */
+
+  .acrylic-benefits {
+    order: 5;
+
+    grid-template-columns: 1fr;
+
+    gap: 16px;
+
+    width: 100%;
+
+    margin-top: 26px;
+  }
+
+  .acrylic-benefit {
+    display: grid;
+
+    grid-template-columns:
+      48px minmax(0, 1fr);
+
+    gap: 14px;
+
+    align-items: center;
+
+    text-align: left;
+  }
+
+  .acrylic-benefit__icon {
+    width: 48px;
+    height: 48px;
+
+    margin: 0;
+  }
+
+  .acrylic-benefit h3 {
+    font-size: 16px;
+  }
+
+  .acrylic-benefit p {
+    font-size: 13px;
+  }
+
+
+  /* CTA */
+
+  .acrylic-button {
+    order: 6;
+
+    width: 100%;
+
+    margin-top: 26px;
+  }
+
+}
