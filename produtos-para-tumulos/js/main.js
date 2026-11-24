@@ -640,9 +640,10 @@ document.addEventListener("DOMContentLoaded", () => {
         if (typeof window.gtag === "function") {
 
           gtag("event", "scroll_depth", {
-            scroll_percent: String(threshold),
-            landing_page: "b2c_produtos_tumulos"
-          });
+  scroll_percent: String(threshold),
+  landing_page: "b2c_produtos_tumulos",
+  debug_mode: true
+});
 
         }
 
