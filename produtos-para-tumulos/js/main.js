@@ -595,5 +595,74 @@ document.addEventListener("DOMContentLoaded", () => {
 
   }
 
+  /* =========================================
+   TRACKING DE PROFUNDIDADE DE ROLAGEM - B2C
+   GA4: 25%, 50%, 75% e 90%
+========================================= */
+
+(() => {
+
+  const thresholds = [25, 50, 75, 90];
+  const reached = new Set();
+
+  function trackScrollDepth() {
+
+    const scrollTop =
+      window.scrollY ||
+      document.documentElement.scrollTop;
+
+    const viewportHeight =
+      window.innerHeight;
+
+    const documentHeight = Math.max(
+      document.body.scrollHeight,
+      document.documentElement.scrollHeight
+    );
+
+    if (!documentHeight) {
+      return;
+    }
+
+    const scrollPercent = Math.min(
+      100,
+      ((scrollTop + viewportHeight) / documentHeight) * 100
+    );
+
+    thresholds.forEach((threshold) => {
+
+      if (
+        scrollPercent >= threshold &&
+        !reached.has(threshold)
+      ) {
+
+        reached.add(threshold);
+
+        if (typeof window.gtag === "function") {
+
+          gtag("event", "scroll_depth", {
+            scroll_percent: String(threshold),
+            landing_page: "b2c_produtos_tumulos"
+          });
+
+        }
+
+      }
+
+    });
+
+  }
+
+  window.addEventListener(
+    "scroll",
+    trackScrollDepth,
+    { passive: true }
+  );
+
+  window.addEventListener(
+    "load",
+    trackScrollDepth
+  );
+
+})();
 
 });
